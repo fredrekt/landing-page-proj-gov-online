@@ -5,7 +5,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link rel="icon" href="img/favicon.png" type="image/png">
-        <title>Nexus SaaS</title>
+        <title>About Project Government Online</title>
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="css/bootstrap.css">
         <link rel="stylesheet" href="vendors/linericon/style.css">
@@ -37,7 +37,7 @@
 							<ul class="nav navbar-nav menu_nav justify-content-center">
 								<li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li> 
 								<li class="nav-item"><a class="nav-link" href="about-us.html">About</a></li> 
-								<li class="nav-item"><a class="nav-link" href="about-us.html">How It Works</a></li> 
+								<li class="nav-item"><a class="nav-link" href="#steps_area">How It Works</a></li> 
 								<li class="nav-item submenu dropdown">
 									<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">e-Services</a>
 									<ul class="dropdown-menu">
@@ -80,33 +80,35 @@
         </section>
         <!--================End Home Banner Area =================-->
         
-        <!--================Made Life Area =================-->
-        <section class="made_life_area p_120">
+       <!--================ Steps Area =================-->
+        <section id="steps_area" class="made_life_area p_120">
         	<div class="container">
+					<h1 id="made-life-header">Steps in Applying</h1>
         		<div class="made_life_inner">
 					<ul class="nav nav-tabs" id="myTab" role="tablist">
 						<li class="nav-item">
-						<a class="nav-link" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Easy to use</a>
+						<a class="nav-link active" id="step-1" data-toggle="tab" href="#input" role="tab" aria-controls="input" aria-selected="true">Input application details</a>
 						</li>
 						<li class="nav-item">
-						<a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Unlimited Colors</a>
+						<a class="nav-link" id="step-2" data-toggle="tab" href="#submit" role="tab" aria-controls="submit" aria-selected="false">Submit application</a>
 						</li>
 						<li class="nav-item">
-						<a class="nav-link active" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Unique Features</a>
+						<a class="nav-link" id="step-3" data-toggle="tab" href="#make" role="tab" aria-controls="make" aria-selected="false">Make Payment</a>
 						</li>
 						<li class="nav-item">
-						<a class="nav-link" id="edge-tab" data-toggle="tab" href="#edge" role="tab" aria-controls="edge" aria-selected="false">Unique Features</a>
+						<a class="nav-link" id="step-4" data-toggle="tab" href="#ack" role="tab" aria-controls="ack" aria-selected="false">Acknowledgment</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" id="step-5" data-toggle="tab" href="#delivery" role="tab" aria-controls="delivery" aria-selected="false">Delivery</a>
 						</li>
 					</ul>
 					<div class="tab-content" id="myTabContent">
-						<div class="tab-pane fade" id="home" role="tabpanel" aria-labelledby="home-tab">
+						<div class="tab-pane fade show active" id="input" role="tabpanel" aria-labelledby="input-tab">
 							<div class="row made_life_text">
 								<div class="col-lg-6">
 									<div class="left_side_text">
-										<h3>We’ve made a life <br />that will change you</h3>
-										<h6>We are here to listen from you deliver exellence</h6>
-										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod temp or incididunt ut labore et dolore magna aliqua. Ut enim ad minim.</p>
-										<a class="main_btn" href="#">Get Started Now</a>
+										<p>Input your application details and needed requirements in correspond to the permit or 
+											clearance you are applying for. A list of application form is provided for your convenience.</p>
 									</div>
 								</div>
 								<div class="col-lg-6">
@@ -116,14 +118,11 @@
 								</div>
 							</div>
 						</div>
-						<div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+						<div class="tab-pane fade" id="submit" role="tabpanel" aria-labelledby="submit-tab">
 							<div class="row made_life_text">
 								<div class="col-lg-6">
 									<div class="left_side_text">
-										<h3>We’ve made a life <br />that will change you</h3>
-										<h6>We are here to listen from you deliver exellence</h6>
-										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod temp or incididunt ut labore et dolore magna aliqua. Ut enim ad minim.</p>
-										<a class="main_btn" href="#">Get Started Now</a>
+										<p>After filling out the needed forms and requirements submit your application.</p>
 									</div>
 								</div>
 								<div class="col-lg-6">
@@ -133,14 +132,11 @@
 								</div>
 							</div>
 						</div>
-						<div class="tab-pane fade show active" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+						<div class="tab-pane fade" id="make" role="tabpanel" aria-labelledby="make-tab">
 							<div class="row made_life_text">
 								<div class="col-lg-6">
 									<div class="left_side_text">
-										<h3>We’ve made a life <br />that will change you</h3>
-										<h6>We are here to listen from you deliver exellence</h6>
-										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod temp or incididunt ut labore et dolore magna aliqua. Ut enim ad minim.</p>
-										<a class="main_btn" href="#">Get Started Now</a>
+										<p>In different application there’ll be necessary payments needed. You can choose different payment methods for your convenience.</p>
 									</div>
 								</div>
 								<div class="col-lg-6">
@@ -150,14 +146,25 @@
 								</div>
 							</div>
 						</div>
-						<div class="tab-pane fade" id="edge" role="tabpanel" aria-labelledby="edge-tab">
+						<div class="tab-pane fade" id="ack" role="tabpanel" aria-labelledby="ack-tab">
 							<div class="row made_life_text">
 								<div class="col-lg-6">
 									<div class="left_side_text">
-										<h3>We’ve made a life <br />that will change you</h3>
-										<h6>We are here to listen from you deliver exellence</h6>
-										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod temp or incididunt ut labore et dolore magna aliqua. Ut enim ad minim.</p>
-										<a class="main_btn" href="#">Get Started Now</a>
+										<p>Wait for your application to get approved by the government.</p>
+									</div>
+								</div>
+								<div class="col-lg-6">
+									<div class="chart_img">
+										<img class="img-fluid" src="img/chart.jpg" alt="">
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="tab-pane fade" id="delivery" role="tabpanel" aria-labelledby="delivery-tab">
+							<div class="row made_life_text">
+								<div class="col-lg-6">
+									<div class="left_side_text">
+										<p>In different application there’ll be necessary payments needed. You can choose different payment methods for your convenience.</p>
 									</div>
 								</div>
 								<div class="col-lg-6">
@@ -171,7 +178,7 @@
         		</div>
         	</div>
         </section>
-        <!--================End Made Life Area =================-->
+        <!--================Steps Area =================-->
         
         <!--================Screen Area =================-->
         <section class="screen_area text-center p_120">

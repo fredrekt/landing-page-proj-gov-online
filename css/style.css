@@ -322,6 +322,8 @@ button:focus {
       .home_banner_area .banner_inner .banner_content p {
         color: #fff;
         font-family: "Roboto", sans-serif;
+        font-size: 20px;
+        line-height: 32px; 
         margin-bottom: 35px; }
       .home_banner_area .banner_inner .banner_content .banner_map_img {
         text-align: right; }
@@ -2647,10 +2649,13 @@ h6 {
     margin-bottom: 30px; }
   .work_item h4 {
     color: #222222;
-    font-size: 20px;
+    font-size: 30px;
     margin-bottom: 15px; }
   .work_item p {
+    color: rgb(12, 12, 12);
     max-width: 310px;
+    font-size: 16px;
+    line-height: 32px; 
     margin: auto; }
   .work_item:hover i {
     background-image: -moz-linear-gradient(0deg, #4dabff 0%, #62ddff 100%);
@@ -2708,6 +2713,13 @@ h6 {
 .made_life_text .col-lg-6 {
   vertical-align: middle;
   align-self: center; }
+.made_life_text h2 {
+  color: #222222;
+  line-height: 45px;
+  font-size: 20px;
+  font-family: "Heebo", sans-serif;
+  font-weight: bold;
+  margin-bottom: 20px; }
 .made_life_text h3 {
   color: #222222;
   line-height: 45px;
@@ -2721,6 +2733,9 @@ h6 {
   font-weight: 500;
   font-family: "Roboto", sans-serif; }
 .made_life_text p {
+  color: rgb(12, 12, 12);
+  font-size: 24px;
+  line-height: 32px; 
   margin-bottom: 0px; }
 .made_life_text .main_btn {
   margin-top: 35px; }
