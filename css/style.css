@@ -2673,9 +2673,11 @@ h6 {
 .made_life_inner .nav.nav-tabs {
   border: none;
   display: flex;
-  flex-wrap: wrap;
-  margin-left: -15px;
-  margin-right: -15px; }
+  flex-wrap: nowrap;
+  margin-left: 0px;
+  margin-right: 0px;
+  width: 900px; }
+  
   .made_life_inner .nav.nav-tabs li {
     flex: 0 0 25%;
     max-width: 25%;
