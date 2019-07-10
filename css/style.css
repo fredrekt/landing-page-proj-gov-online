@@ -3045,6 +3045,58 @@ h1#made-life-header{
   text-align: center;
   margin-bottom: 10%;
 }
+/*
+///////////////////// FOR BUSINESS PERMIT FORM ////////////////
+*/
+.form-group label{
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.1em;
+  color: #000000;
+  text-transform: uppercase;
+  
+}
+img#gov-seal{
+  margin-left: 490px;
+  padding: 20px;
+}
+p#republic-of-ph{
+  padding: 20px;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  letter-spacing: 0.05em;
+  color: #000;
+  text-align: center;
+  margin-left: 200px;
+}
+
+.container-instructions{
+  margin-left: 250px;
+  width: 679px;
+  height: 160px;
+  left: 380px;
+  top: 411px;
+  border: 2px solid rgba(69, 69, 255, 0.2);
+}
+.container-instructions h4{
+  font-family: Raleway;
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 21px;
+
+color: #1A1A1F;
+}
+.form-group label{
+  width:50px;
+  margin-top: 50%;
+  margin-left: 100px;
+}
 /* End Footer Area css
 ============================================================================================ */
 /*---------------------------------------------------- */
