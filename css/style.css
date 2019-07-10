@@ -322,8 +322,6 @@ button:focus {
       .home_banner_area .banner_inner .banner_content p {
         color: #fff;
         font-family: "Roboto", sans-serif;
-        font-size: 20px;
-        line-height: 32px; 
         margin-bottom: 35px; }
       .home_banner_area .banner_inner .banner_content .banner_map_img {
         text-align: right; }
@@ -2649,13 +2647,10 @@ h6 {
     margin-bottom: 30px; }
   .work_item h4 {
     color: #222222;
-    font-size: 30px;
+    font-size: 20px;
     margin-bottom: 15px; }
   .work_item p {
-    color: rgb(12, 12, 12);
     max-width: 310px;
-    font-size: 16px;
-    line-height: 32px; 
     margin: auto; }
   .work_item:hover i {
     background-image: -moz-linear-gradient(0deg, #4dabff 0%, #62ddff 100%);
@@ -2713,13 +2708,6 @@ h6 {
 .made_life_text .col-lg-6 {
   vertical-align: middle;
   align-self: center; }
-.made_life_text h2 {
-  color: #222222;
-  line-height: 45px;
-  font-size: 20px;
-  font-family: "Heebo", sans-serif;
-  font-weight: bold;
-  margin-bottom: 20px; }
 .made_life_text h3 {
   color: #222222;
   line-height: 45px;
@@ -2733,9 +2721,6 @@ h6 {
   font-weight: 500;
   font-family: "Roboto", sans-serif; }
 .made_life_text p {
-  color: rgb(12, 12, 12);
-  font-size: 24px;
-  line-height: 32px; 
   margin-bottom: 0px; }
 .made_life_text .main_btn {
   margin-top: 35px; }
@@ -3048,17 +3033,6 @@ h1#made-life-header{
 /*
 ///////////////////// FOR BUSINESS PERMIT FORM ////////////////
 */
-.form-group label{
-  font-family: Raleway;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.1em;
-  color: #000000;
-  text-transform: uppercase;
-  
-}
 img#gov-seal{
   margin-left: 490px;
   padding: 20px;
@@ -3072,10 +3046,11 @@ p#republic-of-ph{
   letter-spacing: 0.05em;
   color: #000;
   text-align: center;
-  margin-left: 200px;
+  margin-left: 20px;
 }
 
 .container-instructions{
+  margin-bottom: 50px;
   margin-left: 250px;
   width: 679px;
   height: 160px;
@@ -3097,6 +3072,26 @@ color: #1A1A1F;
   margin-top: 50%;
   margin-left: 100px;
 }
+label#form-labels{
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.1em;
+  color: #000000;
+  text-transform: uppercase;
+  
+}
+button#btn-caps{
+  text-transform: uppercase;
+}
+.container-email-phone{
+  padding: 20px;
+  margin-left: 33%;
+}
+
+
 /* End Footer Area css
 ============================================================================================ */
 /*---------------------------------------------------- */

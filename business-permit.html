@@ -103,16 +103,16 @@
                     <form>
                         <div class="row">
                           <div class="col-sm">
-                                <label for="">Application Type</label>
+                                <label id="form-labels" for="">Application Type</label>
                             <div class="form-group">
-                                <select>
+                                <select id="form-select">
                                     <option>New</option>
                                     <option>Old</option>
                                 </select>
                             </div>
                           </div>
                           <div class="col-sm">
-                                <label for="">Amendments</label>
+                                <label id="form-labels" for="">Amendments</label>
                                 <div class="form-group">
                                     <select>
                                         <option>None</option>
@@ -121,7 +121,7 @@
                                 </div>
                           </div>
                           <div class="col-sm">
-                                <label for="">Transfer</label>
+                                <label id="form-labels" for="">Transfer</label>
                                 <div class="form-group">
                                     <select>
                                         <option>Location</option>
@@ -130,7 +130,7 @@
                                 </div>
                           </div>
                           <div class="col-sm">
-                                <label for="">Mode of payment</label>
+                                <label id="form-labels" for="">Mode of payment</label>
                                 <div class="form-group">
                                     <select>
                                         <option>Annual</option>
@@ -139,6 +139,288 @@
                                 </div>
                               </div>
                         </div>
+
+                        <!-- 
+                            2nd row form
+                        -->
+                        <div class="row">
+                                <div class="col-sm-3">
+                                      <label id="form-labels" for="">Type of Organization</label>
+                                  <div class="form-group">
+                                      <select id="form-select">
+                                          <option>New</option>
+                                          <option>Old</option>
+                                      </select>
+                                  </div>
+                                </div>
+                                <div class="col-sm-4">
+                                      <label id="form-labels" for="">CTC Number</label>
+                                      <div class="form-group">
+                                          <select>
+                                              <option>None</option>
+                                              <option>Old</option>
+                                          </select>
+                                      </div>
+                                </div>
+                                <div class="col-sm">
+                                      <label id="form-labels" for="">Tin Number</label>
+                                      <div class="form-group">
+                                          <select>
+                                              <option>Location</option>
+                                              <option>Old</option>
+                                          </select>
+                                      </div>
+                                </div>
+                              </div>
+                              <div class="row">
+                                  <div class="col-sm">
+                                      <input class="form-check-input" type="checkbox">Non-Stock/Non-Profit</input><br>
+                                      <input class="form-check-input" type="checkbox">Choice</input>
+                                  </div>
+                              </div>
+                               <!-- 
+                            3nd row form
+                        -->
+                        <div class="row">
+                                <div class="col-sm-8">
+                                      <label id="form-labels" for="">DTI/SEC/CDA REGISTRATION NUMBER</label>
+                                  <div class="form-group">
+                                      <input type="text" class="form-control">
+                                  </div>
+                                </div>
+                                <div class="col-sm-4">
+                                      <label id="form-labels" for="">D.O.R</label>
+                                      <div class="form-group">
+                                          <input class="form-control" type="date">
+                                      </div>
+                                </div>
+                              </div>
+                                  <!-- 
+                            4th row form
+                        -->
+                        <div class="row">
+                                <div class="col-sm-8">
+                                      <label id="form-labels" for="">Name of tax payer</label>
+                                  <div class="form-group">
+                                      <input class="form-control" type="text">
+                                  </div>
+                                </div>
+                                <div class="col-sm-4">
+                                      <label id="form-labels" for="">Business Name</label>
+                                      <div class="form-group">
+                                          <input class="form-control" type="text">
+                                      </div>
+                                </div>
+                              </div>
+                                  <!-- 
+                            5th row form
+                        -->
+                        <div class="row">
+                                <div class="col-sm-8">
+                                      <label id="form-labels" for="">Name of president/treasurer of corporation</label>
+                                  <div class="form-group">
+                                      <input class="form-control" type="text">
+                                  </div>
+                                </div>
+                                <div class="col-sm-4">
+                                      <label id="form-labels" for="">tradename/franchise name</label>
+                                      <div class="form-group">
+                                          <input class="form-control" type="text">
+                                      </div>
+                                </div>
+                              </div>
+                                  <!-- 
+                            6th row form
+                        -->
+                        <div class="row">
+                                <div class="col-sm-12">
+                                      <label id="form-labels" for="">Complete business Address</label>
+                                  <div class="form-group">
+                                      <input class="form-control" type="text">
+                                  </div>
+                                </div>
+                              </div>
+                                    <!-- 
+                            7th row form
+                        -->
+                        <div class="row">
+                                <div class="col-sm-12">
+                                      <label id="form-labels" for="">Complete owner's Address</label>
+                                  <div class="form-group">
+                                      <input class="form-control" type="text">
+                                  </div>
+                                </div>
+                              </div>
+                              <!-- 
+                            8th row form
+                        -->
+                        <div class="row">
+                                <div class="col-sm-3">
+                                      <label id="form-labels" for="">Contact number</label>
+                                  <div class="form-group">
+                                      <input class="form-control" type="text">
+                                  </div>
+                                </div>
+                                <div class="col-sm-3">
+                                      <label id="form-labels" for="">Business Area</label>
+                                      <div class="form-group">
+                                          <input class="form-control" type="text">
+                                      </div>
+                                </div>
+                                <div class="col-sm-3">
+                                      <label id="form-labels" for="">Place of Business</label>
+                                      <div class="form-group">
+                                          <select>
+                                              <option>Rented</option>
+                                              <option>Own</option>
+                                          </select>
+                                      </div>
+                                </div>
+                                <div class="col-sm-3">
+                                        <label id="form-labels" for="">Monthly Rental</label>
+                                        <input class="form-control" type="text">
+                                    </div>
+                                
+                                    <!-- 
+                                        //// number of employees and machineries
+                                    -->
+                                    <div class="row">
+                                        <div class="col-sm-6"> 
+                                            <h3>Number of Employees</h2>
+                                                <div class="container">
+                                                    <input type="text">
+                                                    <label for="">Manager</label>
+                                                    <input type="text">
+                                                    <label for="">Supervisor</label>
+                                                    <input type="text">
+                                                    <label for="">Cashier</label>
+                                                    <input type="text">
+                                                    <label for="">Rank & File</label>
+                                                </div>            
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <h3>Number of Machineries</h3>
+                                            <div class="container">
+                                                    <input type="text">
+                                                    <label for="">Elevator</label>
+                                                    <input type="text">
+                                                    <label for="">Escalator</label>
+                                                    <input type="text">
+                                                    <label for="">Air Conditioner</label>
+                                                    <input type="text">
+                                                    <label for="">CCTV's</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                              </div>
+                              <!-- 
+                            9th row form
+                        -->
+                        <div class="row">
+                                <div class="col-sm-6">
+                                      <label id="form-labels" for="">Lessor's Name</label>
+                                  <div class="form-group">
+                                      <input class="form-control" type="text">
+                                  </div>
+                                </div>
+                                
+                                <div class="col-sm-6">
+                                      <label id="form-labels" for="">Area of signboard / Billboard</label>
+                                      <div class="form-group">
+                                            <input class="form-control" type="text">
+                                      </div>
+                                </div>
+                              </div>
+                                 <!-- 
+                            10th row form
+                        -->
+                        <div class="row">
+                                <div class="col-sm-12">
+                                      <label id="form-labels" for="">Lessor's Address</label>
+                                  <div class="form-group">
+                                      <input class="form-control" type="text">
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="container-instructions">
+                                    <h4>Instructions</h4>
+                                    <ol>
+                                        <div class="row">
+                                        <li>Please upload the files according to their appropriate name:</li>
+                                        </div>
+                                        <ul>
+
+                                            <p>- DTI Clearance &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - Certificate of Prop Holdings &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - Occupational Permit
+                                            <br>- Old Business Permit &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - Contract of Lease &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - CCENRO Certificate
+                                            <br>- Barangay Clearance &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - Sanitary Permit &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[insert additional required files]
+                                            <br>- Barangay Clearn OR &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - Fire and Safety Inspection Cert.
+                                        </p>
+                                        </ul>
+                                    </ol>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-4">
+                                            <button id="btn-caps" class="btn btn-primary">Download business activity chart</button>
+                                    </div>
+                                    <div class="col-sm-4">
+                                            <button id="btn-caps" class="btn btn-primary">Download Attestation</button>
+                                    </div>
+                                    <div class="col-sm-4">
+                                            <button id="btn-caps" class="btn btn-primary">Download joint inspection report</button>
+                                    </div>
+                                </div>
+                                <center> 
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <div class="container-bordered-fred">
+                                            <p>Business_Activity_Chart.pdf</p>
+                                        </div>
+                                    </div>
+                                    </div>
+                                    <div class="row">
+                                            <div class="col-sm-12">
+                                                <div class="container-bordered-fred">
+                                                    <p>Business_Activity_Chart.pdf</p>
+                                                </div>
+                                            </div>
+                                            </div>
+                                    <div class="row">
+                                    <div class="col-sm-12">
+                                        <div class="container-bordered-fred">
+                                            <p>Business_Activity_Chart.pdf</p>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </center>
+                                </div>
+                                <center>
+                                        <button id="btn-caps" class="btn btn-primary">upload pdf files</button>
+                                </center>
+                                <!--
+                                    ----------------------------------------------------------------------
+                                    border line
+                                -->
+                                <div class="container-email-phone">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <label id="form-labels" for="">Email</label>
+                                        <div class="form-group">
+                                            <input class="form-control" type="text" placeholder="your-email@mail.com">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                        <div class="col-sm-6">
+                                            <label id="form-labels" for="">Phone Number</label>
+                                            <div class="form-group">
+                                                <input class="form-control" type="text" placeholder="+63 |">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <center>
+                              <input style="background-color: #616193; color:white;" class="btn btn-lg" type="submit" value="SUBMIT APPLICATION"> 
+                                </center> 
                     </form>
                       </div>
             </div>
