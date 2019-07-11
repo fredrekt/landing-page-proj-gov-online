@@ -1730,7 +1730,7 @@ h6 {
 .progress-table {
   background: #fff;
   padding: 15px 0px 30px 0px;
-  min-width: 800px; }
+  min-width: 1000px; }
 
 .progress-table .serial {
   width: 11.83%;
@@ -2671,29 +2671,29 @@ h6 {
   .made_life_area.made_white {
     background: #fff; }
 
-.made_life_inner .nav.nav-tabs {
+.made_life_inner .nav.nav-tabs{
   border: none;
-  display: flex;
-  flex-wrap: nowrap;
-  margin-left: 0px;
-  margin-right: 0px;
-  width: 900px; }
-  
+  padding-left: 0%;
+  display: inline-flex;
+  flex-wrap: wrap;
+  width: 100%; }
+
   .made_life_inner .nav.nav-tabs li {
-    flex: 0 0 25%;
-    max-width: 25%;
-    padding: 0px 15px; }
+    flex: 8 8 10%;
+    max-width: 100%; }
+
     .made_life_inner .nav.nav-tabs li a {
-      border: none;
+      border: solid;
+      border-color: white;
+      border-width: 2px;
       padding: 0px;
       background: #fff;
-      border-radius: 0px;
       text-align: center;
       line-height: 60px;
-      border-radius: 5px;
+      border-radius: 2px;
       font-size: 13px;
       font-family: "Roboto", sans-serif;
-      font-weight: 500;
+      font-weight: 500%;
       text-transform: uppercase;
       color: #222222; }
       .made_life_inner .nav.nav-tabs li a.active {
