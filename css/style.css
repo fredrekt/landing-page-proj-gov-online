@@ -2683,7 +2683,7 @@ h6 {
     max-width: 100%; }
 
     .made_life_inner .nav.nav-tabs li a {
-      border: solid;
+      border: none;
       border-color: white;
       border-width: 2px;
       padding: 0px;
