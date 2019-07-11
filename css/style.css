@@ -3232,12 +3232,11 @@ box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.3);
 border-radius: 5px;
 }
 .emp-group {
-  margin: 20px 10px;
+  margin: 20px 0px 20px 0px;
   width: 240px;
   height: fit-content;
   display: flex;
   flex-flow: row wrap;
-  justify-content: center;
   align-content: center;
 }
 .emp-group input {
@@ -3254,6 +3253,7 @@ border-radius: 5px;
   justify-content: space-evenly;
   align-content: space-evenly;
   max-width: 550px;
+  padding-left: 45px;
 }
 .downloads {
   display: flex;
