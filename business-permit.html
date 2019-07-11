@@ -4,7 +4,7 @@
         <!-- Required meta tags -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <link rel="icon" href="img/favicon.png" type="image/png">
+        <!-- <link rel="icon" href="img/favicon.png" type="image/png"> -->
         <title>Business Permit</title>
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="css/bootstrap.css">
@@ -28,7 +28,7 @@
             	<nav class="navbar navbar-expand-lg navbar-light">
 					<div class="container box_1620">
 						<!-- Brand and toggle get grouped for better mobile display -->
-						<a class="navbar-brand logo_h" href="index.html"><img src="img/logo.png" alt=""></a>
+						<a class="navbar-brand logo_h" href="/"><img src="img/logohere.png" width="100px" alt=""></a>
 						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 							<span class="icon-bar"></span>
 							<span class="icon-bar"></span>
@@ -37,9 +37,9 @@
 						<!-- Collect the nav links, forms, and other content for toggling -->
 						<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
 							<ul class="nav navbar-nav menu_nav justify-content-center">
-								<li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li> 
-								<li class="nav-item"><a class="nav-link" href="about-us.html">About</a></li> 
-								<li class="nav-item"><a class="nav-link" href="services.html">How It Works</a>
+								<li class="nav-item active"><a class="nav-link" href="/">Home</a></li> 
+								<li class="nav-item"><a class="nav-link" href="/about-us">About</a></li> 
+								<li class="nav-item"><a class="nav-link" href="/services">How It Works</a>
                                     <li class="nav-item submenu dropdown">
                                             <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">e-Services</a>
                                             <ul class="dropdown-menu">
@@ -56,7 +56,7 @@
                                                 <li class="nav-item"><a class="nav-link" href="#">Sanitary Permit</a></li>	
                                             </ul>
                                         </li> 
-								<li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+								<li class="nav-item"><a class="nav-link" href="/contact">Contact</a></li>
 							</ul>
 						</div> 
 					</div>
@@ -73,8 +73,8 @@
 					<div class="banner_content text-center">
 						<h2>Business Permit</h2>
 						<div class="page_link">
-							<a href="index.html">Home</a>
-							<a href="contact.html">Business Permit</a>
+							<a href="/">Home</a>
+							<a href="/contact">Business Permit</a>
 						</div>
 						
 					</div>
@@ -100,14 +100,22 @@
                         <li>Name the uploaded files appropriately.</li>
                     </ol>
                 </div>
+                <hr>
                     <form>
                         <div class="row">
                           <div class="col-sm">
                                 <label id="form-labels" for="">Application Type</label>
                             <div class="form-select">
+<<<<<<< HEAD
                                 <select id="form-control">
                                     <option>New</option>
                                     <option>Old</option>
+=======
+                                <select id="form-select">
+                                    <option value="New">New</option>
+                                    <option value="Renewal">Renewal</option>
+                                    <option value="Additional">Additional</option>
+>>>>>>> 5a1ba509015a092df1ccfb2aafc489350168af48
                                 </select>
                             </div>
                           </div>
@@ -115,8 +123,9 @@
                                 <label id="form-labels" for="">Amendments</label>
                                 <div class="form-select">
                                     <select>
-                                        <option>None</option>
-                                        <option>Old</option>
+                                        <option value="Partnership">From Single to Partnership</option>
+                                        <option value="Corporation">From Single to Corporation</option>
+                                        <option value="Single">From Partnership to Single</option>
                                     </select>
                                 </div>
                           </div>
@@ -124,8 +133,8 @@
                                 <label id="form-labels" for="">Transfer</label>
                                 <div class="form-select">
                                     <select>
-                                        <option>Location</option>
-                                        <option>Old</option>
+                                        <option value="Location">Location</option>
+                                        <option value="Ownership">Ownership</option>
                                     </select>
                                 </div>
                           </div>
@@ -133,8 +142,9 @@
                                 <label id="form-labels" for="">Mode of payment</label>
                                 <div class="form-select">
                                     <select>
-                                        <option>Annual</option>
-                                        <option>Gradual</option>
+                                        <option value="Annual">Annual</option>
+                                        <option value="Semi-Annually">Semi-Annually</option>
+                                        <option value="Quarterly">Quarterly</option>
                                     </select>
                                 </div>
                               </div>
@@ -148,35 +158,29 @@
                                       <label id="form-labels" for="">Type of Organization</label>
                                   <div class="form-select">
                                       <select id="form-select">
-                                          <option>New</option>
-                                          <option>Old</option>
+                                          <option value="Sole Proprietorship">Sole Proprietorship</option>
+                                          <option value="Partnership">Partnership</option>
+                                          <option value="Corporation">Corporation</option>
+                                          <option value="Cooperative">Cooperative</option>
                                       </select>
                                   </div>
+                                  <input class="form-check-input" id="stock" value="Non-Stock/Non-Profit" type="checkbox"></input>
+                                      <label value="Non-Stock/Non-Profit" for="stock"></label><br>
+                                      <input class="form-check-input" id="proprietary" value="Proprietary" type="checkbox"></input>
+                                      <label value="Proprietary" for="proprietary"></label>
                                 </div>
                                 <div class="col-sm-4">
                                       <label id="form-labels" for="">CTC Number</label>
-                                      <div class="form-select">
-                                          <select>
-                                              <option>None</option>
-                                              <option>Old</option>
-                                          </select>
+                                      <div class="form-group">
+                                        <input class="form-control" type="text">
                                       </div>
                                 </div>
                                 <div class="col-sm">
                                       <label id="form-labels" for="">Tin Number</label>
-                                      <div class="form-select">
-                                          <select>
-                                              <option>Location</option>
-                                              <option>Old</option>
-                                          </select>
+                                      <div class="form-group">
+                                        <input class="form-control" type="text">
                                       </div>
                                 </div>
-                              </div>
-                              <div class="row">
-                                  <div class="col-sm">
-                                      <input id="form-check" class="form-check-input" type="checkbox">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Non-Stock/Non-Profit</input><br>
-                                      <input id="form-check" class="form-check-input" type="checkbox">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Choice</input>
-                                  </div>
                               </div>
                                <!-- 
                             3nd row form
@@ -236,7 +240,7 @@
                                 <div class="col-sm-12">
                                       <label id="form-labels" for="">Complete business Address</label>
                                   <div class="form-group">
-                                      <input class="form-control" type="text" placeholder="House No./Building No.        Street              Barangay">
+                                      <input class="form-control" type="text" placeholder="House No/Building No.        Street              Barangay">
                                   </div>
                                 </div>
                               </div>
@@ -247,7 +251,7 @@
                                 <div class="col-sm-12">
                                       <label id="form-labels" for="">Complete owner's Address</label>
                                   <div class="form-group">
-                                      <input class="form-control" type="text" placeholder="House No./Building No.        Street              Barangay">
+                                      <input class="form-control" type="text" placeholder="House No/Building No.        Street              Barangay">
                                   </div>
                                 </div>
                               </div>
@@ -272,7 +276,7 @@
                                       <div class="form-select">
                                           <select>
                                               <option>Rented</option>
-                                              <option>Own</option>
+                                              <option>Owned</option>
                                           </select>
                                       </div>
                                 </div>
@@ -288,60 +292,47 @@
                                     <!--
                                         Number of Employees
                                     -->
-                                <div class="container-number-of-emp">
+                                <div class="container-number-of-emp" style="margin-left: 30px;">
                                     <h4>Number of Employees</h4>
-                                    <div class="col">
-                                        <div class="row">
-                                            <div class="col-sm-3">
-                                                <input type="text">
-                                                <label for="">Manager</label>
-                                            </div>
-                                            <div class="col-sm-3">
-                                                <input type="text">
-                                                <label for="">Supervisor</label>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-sm-3">
-                                                <input type="text">
-                                                <label for="">Cashier</label>
-                                            </div>
-                                            <div class="col-sm-3">
-                                                <input type="text">
-                                                <label for="">Rank & File</label>
-                                            </div>
-                                        </div>
+                                    <div class="emp-group">
+                                        <input type="text">
+                                        <span>Manager</span>
+                                    </div>
+                                    <div class="emp-group">
+                                        <input type="text">
+                                        <span>Supervisor</span>
+                                    </div>
+                                    <div class="emp-group">
+                                        <input type="text">
+                                        <span>Cashier</span>
+                                    </div>
+                                    <div class="emp-group">
+                                        <input type="text">
+                                        <span>Rank & File</span>
                                     </div>
                                 </div>
                                     <!--
                                         Number of Machineries
                                     -->
-                                    <div class="container-number-of-emp-2">
-                                            <h4>Number of Employees</h4>
-                                            <div class="col">
-                                                <div class="row">
-                                                    <div class="col-sm-3">
-                                                        <input type="text">
-                                                        <label for="">Manager</label>
-                                                    </div>
-                                                    <div class="col-sm-3">
-                                                        <input type="text">
-                                                        <label for="">Supervisor</label>
-                                                    </div>
-                                                </div>
-                                                <div class="row">
-                                                    <div class="col-sm-3">
-                                                        <input type="text">
-                                                        <label for="">Cashier</label>
-                                                    </div>
-                                                    <div class="col-sm-3">
-                                                        <input type="text">
-                                                        <label for="">Rank & File</label>
-                                                    </div>
-                                                </div>
-                                            </div>
+                                    <div class="container-number-of-emp" style="margin-left: 40px;">
+                                        <h4>Number of Machines</h4>
+                                        <div class="emp-group">
+                                            <input type="text">
+                                            <span>Elevator</span>
                                         </div>
-
+                                        <div class="emp-group">
+                                            <input type="text">
+                                            <span>Escalator</span>
+                                        </div>
+                                        <div class="emp-group">
+                                            <input type="text">
+                                            <span>Air Conditioner</span>
+                                        </div>
+                                        <div class="emp-group">
+                                            <input type="text">
+                                            <span>CCTVs</span>
+                                        </div>
+                                    </div>
 
                                 </div>
                             </div>
@@ -358,8 +349,14 @@
                                 
                                 <div class="col-sm-6">
                                       <label id="form-labels" for="">Area of signboard / Billboard</label>
-                                      <div class="form-group">
-                                            <input class="form-control" type="text" placeholder="In square meters">
+                                      <div class="form-group" style="display:flex;flex-flow:row wrap;justify-content:space-between">
+                                            <input class="form-control" style="width: 48%" type="text" placeholder="In square meters">
+                                            <div class="form-select" style="width: 48%">
+                                                <select>
+                                                    <option value="Annual">With Light</option>
+                                                    <option value="Annual">Without Light</option>
+                                                </select>
+                                            </div>
                                       </div>
                                 </div>
                               </div>
@@ -370,36 +367,36 @@
                                 <div class="col-sm-12">
                                       <label id="form-labels" for="">Lessor's Address</label>
                                   <div class="form-group">
-                                      <input class="form-control" type="text" placeholder="House No./Building No.                                              Street                                                                           Barangay                                         City/Municipality">
+                                      <input class="form-control" type="text" placeholder="House No/Building No.                                              Street                                                                           Barangay                                         City/Municipality">
                                   </div>
                                 </div>
                               </div>
+                              <hr>
                               <div class="container-instructions">
                                     <h4>Instructions</h4>
                                     <ol>
                                         <div class="row">
                                         <li>Please upload the files according to their appropriate name:</li>
                                         </div>
-                                        <ul>
-
-                                            <p>- DTI Clearance &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - Certificate of Prop Holdings &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - Occupational Permit
-                                            <br>- Old Business Permit &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - Contract of Lease &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - CCENRO Certificate
-                                            <br>- Barangay Clearance &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - Sanitary Permit &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[insert additional required files]
-                                            <br>- Barangay Clearn OR &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - Fire and Safety Inspection Cert.
-                                        </p>
+                                        <ul class="requirements">
+                                            <li>DTI Clearance</li>
+                                            <li>Certificate of Prop Holdings</li>
+                                            <li>Occupational Permit</li>
+                                            <li>Old Business Permit</li>
+                                            <li>Contract of Lease</li>
+                                            <li>CCENRO Certificate</li>
+                                            <li>Barangay Clearance</li>
+                                            <li>Sanitary Permit</li>
+                                            <li>Barangay Clearance OR</li>
+                                            <li>Fire and Safety Inspection Cert.</li>
+                                            <span style="opacity:0.5">[insert additional required files</span>
                                         </ul>
                                     </ol>
                                 </div>
-                                <div class="row">
-                                    <div class="col-sm-4">
-                                            <button id="btn-caps" class="btn btn-primary">Download business activity chart</button>
-                                    </div>
-                                    <div class="col-sm-4">
-                                            <button id="btn-caps" class="btn btn-primary">Download Attestation</button>
-                                    </div>
-                                    <div class="col-sm-4">
-                                            <button id="btn-caps" class="btn btn-primary">Download joint inspection report</button>
-                                    </div>
+                                <div class="downloads">
+                                    <button id="btn-caps" class="btn btn-primary">Download business activity chart</button>
+                                    <button id="btn-caps" class="btn btn-primary">Download Attestation</button>
+                                    <button id="btn-caps" class="btn btn-primary">Download joint inspection report</button>
                                 </div>
                                 <center> 
                                 <div class="container-business-chart">
