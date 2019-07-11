@@ -152,13 +152,15 @@
                                       <label id="form-labels" for="">Type of Organization</label>
                                   <div class="form-select">
                                       <select id="form-select">
-                                          <option>New</option>
-                                          <option>Old</option>
+                                          <option value="Sole Proprietorship">Sole Proprietorship</option>
+                                          <option value="Partnership">Partnership</option>
+                                          <option value="Corporation">Corporation</option>
+                                          <option value="Cooperative">Cooperative</option>
                                       </select>
                                   </div>
-                                  <input class="form-check-input" id="stock" type="checkbox"></input>
+                                  <input class="form-check-input" id="stock" value="Non-Stock/Non-Profit" type="checkbox"></input>
                                       <label value="Non-Stock/Non-Profit" for="stock"></label><br>
-                                      <input class="form-check-input" id="proprietary" type="checkbox"></input>
+                                      <input class="form-check-input" id="proprietary" value="Proprietary" type="checkbox"></input>
                                       <label value="Proprietary" for="proprietary"></label>
                                 </div>
                                 <div class="col-sm-4">
@@ -268,7 +270,7 @@
                                       <div class="form-select">
                                           <select>
                                               <option>Rented</option>
-                                              <option>Own</option>
+                                              <option>Owned</option>
                                           </select>
                                       </div>
                                 </div>
@@ -341,8 +343,14 @@
                                 
                                 <div class="col-sm-6">
                                       <label id="form-labels" for="">Area of signboard / Billboard</label>
-                                      <div class="form-group">
-                                            <input class="form-control" type="text" placeholder="In square meters">
+                                      <div class="form-group" style="display:flex;flex-flow:row wrap;justify-content:space-between">
+                                            <input class="form-control" style="width: 48%" type="text" placeholder="In square meters">
+                                            <div class="form-select" style="width: 48%">
+                                                <select>
+                                                    <option value="Annual">With Light</option>
+                                                    <option value="Annual">Without Light</option>
+                                                </select>
+                                            </div>
                                       </div>
                                 </div>
                               </div>
