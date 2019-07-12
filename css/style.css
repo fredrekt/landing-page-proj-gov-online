@@ -325,7 +325,7 @@ button:focus {
       .home_banner_area .banner_inner .banner_content p {
         color: #fff;
         font-family: "Roboto", sans-serif;
-        font-size: 20px;
+        font-size: 120%;
         line-height: 30px;
         margin-bottom: 35px; }
       .home_banner_area .banner_inner .banner_content .banner_map_img {
@@ -2713,6 +2713,9 @@ h6 {
 .made_life_text .col-lg-6 {
   vertical-align: middle;
   align-self: center; }
+.made_life_text .col-lg-12 {
+  vertical-align: middle;
+  text-align: left; }
 .made_life_text h3 {
   color: #222222;
   line-height: 45px;
@@ -2734,6 +2737,12 @@ h6 {
   margin-bottom: 40px; }
 .screen_area img {
   margin-bottom: -30px; }
+
+.screen_area1 .main_title {
+  margin-bottom: -50px; }
+.screen_area1 img {
+  margin-bottom: -30px; }
+
 
 /* End Work Area css
 ============================================================================================ */
