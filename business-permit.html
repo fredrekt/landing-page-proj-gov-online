@@ -101,21 +101,15 @@
                     </ol>
                 </div>
                 <hr>
-                    <form>
+                    <form action="application-sent.html#start-of-process">
                         <div class="row">
                           <div class="col-sm">
                                 <label id="form-labels" for="">Application Type</label>
                             <div class="form-select">
-<<<<<<< HEAD
-                                <select id="form-control">
-                                    <option>New</option>
-                                    <option>Old</option>
-=======
                                 <select id="form-select">
                                     <option value="New">New</option>
                                     <option value="Renewal">Renewal</option>
                                     <option value="Additional">Additional</option>
->>>>>>> 5a1ba509015a092df1ccfb2aafc489350168af48
                                 </select>
                             </div>
                           </div>
@@ -443,7 +437,7 @@
                                     <div class="col-sm-6">
                                         <label id="form-labels" for="">Email</label>
                                         <div class="form-group">
-                                            <input class="form-control" type="text" placeholder="your-email@mail.com">
+                                            <input required class="form-control" type="email" placeholder="your-email@mail.com">
                                         </div>
                                     </div>
                                 </div>
@@ -451,13 +445,13 @@
                                         <div class="col-sm-6">
                                             <label id="form-labels" for="">Phone Number</label>
                                             <div class="form-group">
-                                                <input class="form-control" type="text" placeholder="+63 |">
+                                                <input required class="form-control" type="text" placeholder="+63 |">
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                                 <center>
-                              <input style="background-color: #616193; color:white;" class="btn btn-lg" type="submit" value="SUBMIT APPLICATION"> 
+                              <input onclick="application-sent.html" style="background-color: #616193; color:white;" class="btn btn-lg" type="submit" value="SUBMIT APPLICATION"> 
                                 </center> 
                     </form>
                       </div>

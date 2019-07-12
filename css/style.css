@@ -3294,4 +3294,59 @@ span#declined{
   /* Green */
   color: #F04747;
 }
-  
+.img-check{
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 80px;
+  border-radius: 50%;
+}
+h3#title-process{
+  text-transform: uppercase;
+
+  font-style: normal;
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.05em; 
+  color: #43B581;
+}
+p#email-updates{
+text-align: center;
+color: #2A7352;
+}
+button#btn-home{
+  width: 20%;
+  text-transform: uppercase;
+}
+button#btn-status{
+  width:20%;
+  text-transform: uppercase;
+  color: #4545FF;
+
+}
+/* 
+  LRF FORM
+*/
+img#gov-seal-lrf{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+
+}
+p#lrf-txt{
+  color: #000;
+  text-align: center;
+  letter-spacing: 0.05em;
+
+}
+.header-business{
+  text-align: center;
+  color: #000;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 28px;
+  margin-top: 5%;
+}
