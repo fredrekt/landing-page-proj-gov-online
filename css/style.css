@@ -1825,8 +1825,10 @@ h6 {
 
 .unordered-list li {
   position: relative;
+  text-align: left;
   padding-left: 30px;
-  line-height: 1.82em !important; }
+  line-height: 1.82em !important;
+  font-size: 17px; }
 
 .unordered-list li:before {
   content: "";
