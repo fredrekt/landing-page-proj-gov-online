@@ -306,9 +306,10 @@ button:focus {
   .home_banner_area .banner_inner {
     width: 100%; }
     .home_banner_area .banner_inner .home_left_img {
-      padding-top: 230px;
-      padding-bottom: 230px;
-      width: 800px; }
+      padding-top: 40%;
+      padding-bottom: 30%;
+      padding-left: 0%;
+      width: 108%; }
     .home_banner_area .banner_inner .col-lg-5 {
       vertical-align: middle;
       align-self: center; }
@@ -2715,7 +2716,11 @@ h6 {
   align-self: center; }
 .made_life_text .col-lg-12 {
   vertical-align: middle;
-  text-align: left; }
+  text-align: left; }  
+.made_life_text .col-lg-12  p{
+  font-size: 17px;
+  line-height: 40px; }
+
 .made_life_text h3 {
   color: #222222;
   line-height: 45px;
