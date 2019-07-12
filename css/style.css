@@ -307,7 +307,8 @@ button:focus {
     width: 100%; }
     .home_banner_area .banner_inner .home_left_img {
       padding-top: 230px;
-      padding-bottom: 230px; }
+      padding-bottom: 230px;
+      width: 800px; }
     .home_banner_area .banner_inner .col-lg-5 {
       vertical-align: middle;
       align-self: center; }
@@ -324,6 +325,8 @@ button:focus {
       .home_banner_area .banner_inner .banner_content p {
         color: #fff;
         font-family: "Roboto", sans-serif;
+        font-size: 20px;
+        line-height: 30px;
         margin-bottom: 35px; }
       .home_banner_area .banner_inner .banner_content .banner_map_img {
         text-align: right; }
