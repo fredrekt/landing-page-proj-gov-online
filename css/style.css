@@ -2410,8 +2410,8 @@ h6 {
   border-radius: 0px;
   height: 40px;
   background: #f9f9ff !important;
-  padding-left: 45px;
-  padding-right: 40px;
+  padding-left: 40px;
+  padding-right: 10px;
   width: 100%; }
 
 .form-select .nice-select .list {
@@ -2450,6 +2450,7 @@ h6 {
 
 .form-select .nice-select::after {
   right: 20px; }
+
 
 /*---------------------------------------------------- */
 /*----------------------------------------------------*/
