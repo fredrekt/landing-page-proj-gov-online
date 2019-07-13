@@ -85,11 +85,10 @@
         
         <!--================Contact Area =================-->
         <div class="container">
-            <br><br><br><br><br><br><br>
             <ul class="progbar">
-                <li>Fill Out Application Form</li>
-                <li>Upload Required Documents</li>
-                <li>Pay Regulatory Fees</li>
+                <li class="pb active">Fill Out Application Form</li>
+                <li class="pb">Upload Required Documents</li>
+                <li class="pb">Pay Regulatory Fees</li>
             </ul>
         </div>
         <section class="contact_area p_120">
@@ -108,376 +107,287 @@
                         <li>Name the uploaded files appropriately.</li>
                     </ol>
                 </div>
+
                 <hr>
-                    <form action="application-sent.html#start-of-process">
-                        <div class="row">
-                          <div class="col-lg">
-                                <label id="form-labels" for="">Application Type</label>
-                            <div class="form-select">
-                                <select id="form-select">
-                                    <option value="New">New</option>
-                                    <option value="Renewal">Renewal</option>
-                                    <option value="Additional">Additional</option>
-                                </select>
-                            </div>
-                          </div>
-                          <div class="col-lg">
-                                <label id="form-labels" for="">Amendments</label>
-                                <div class="form-select">
-                                    <select>
-                                        <option value="From_Single_to_Partnership">From Single to Partnership</option>
-                                        <option value="From_Single_to_Corporation">From Single to Corporation</option>
-                                        <option value="From_Partnership_to_Single">From Partnership to Single</option>
-                                        <option value="From_Partnership_to_Corporation">From Partnership to Corporation</option>
-                                        <option value="From_Corporation_to_Single">From Corporation to Single</option>
-                                        <option value="From_Corporation_to_Partnership">From Corporation to Partnership</option>
-                                    </select>
-                                </div>
-                          </div>
-                          <div class="col-lg">
-                                <label id="form-labels" for="">Transfer</label>
-                                <div class="form-select">
-                                    <select>
-                                        <option value="Location">Location</option>
-                                        <option value="Ownership">Ownership</option>
-                                    </select>
-                                </div>
-                          </div>
-                          <div class="col-lg">
-                                <label id="form-labels" for="">Mode of payment</label>
-                                <div class="form-select">
-                                    <select>
-                                        <option value="Annual">Annual</option>
-                                        <option value="Semi-Annually">Semi-Annually</option>
-                                        <option value="Quarterly">Quarterly</option>
-                                    </select>
-                                </div>
-                              </div>
+                    <form action="upload-docs">
+                <div class="row">
+                    <div class="col-lg">
+                        <label id="form-labels" for="">Application Type</label>
+                        <div class="form-select">
+                            <select id="form-select">
+                                <option value="New">New</option>
+                                <option value="Renewal">Renewal</option>
+                                <option value="Additional">Additional</option>
+                            </select>
                         </div>
-
-                        <!-- 
-                            2nd row form
-                        -->
-                        <div class="row">
-                                <div class="col-sm-3">
-                                      <label id="form-labels" for="">Type of Organization</label>
-                                  <div class="form-select">
-                                      <select id="form-select">
-                                          <option value="Sole Proprietorship">Sole Proprietorship</option>
-                                          <option value="Partnership">Partnership</option>
-                                          <option value="Corporation">Corporation</option>
-                                          <option value="Cooperative">Cooperative</option>
-                                      </select>
-                                  </div>
-                                  <input class="form-check-input" id="stock" value="Non-Stock/Non-Profit" type="checkbox"></input>
-                                      <label value="Non-Stock/Non-Profit" for="stock"></label><br>
-                                      <input class="form-check-input" id="proprietary" value="Proprietary" type="checkbox"></input>
-                                      <label value="Proprietary" for="proprietary"></label>
-                                </div>
-                                <div class="col-sm-4">
-                                      <label id="form-labels" for="">CTC Number</label>
-                                      <div class="form-group">
-                                        <input class="form-control" type="text">
-                                      </div>
-                                </div>
-                                <div class="col-sm">
-                                      <label id="form-labels" for="">Tin Number</label>
-                                      <div class="form-group">
-                                        <input class="form-control" type="text">
-                                      </div>
-                                </div>
-                              </div>
-                               <!-- 
-                            3nd row form
-                        -->
-                        <div class="row">
-                                <div class="col-sm-8">
-                                      <label id="form-labels" for="">DTI/SEC/CDA REGISTRATION NUMBER</label>
-                                  <div class="form-group">
-                                      <input type="text" class="form-control">
-                                  </div>
-                                </div>
-                                <div class="col-sm-4">
-                                      <label id="form-labels" for="">D.O.R</label>
-                                      <div class="form-group">
-                                          <input class="form-control" type="date">
-                                      </div>
-                                </div>
-                              </div>
-                                  <!-- 
-                            4th row form
-                        -->
-                        <div class="row">
-                                <div class="col-sm-8">
-                                      <label id="form-labels" for="">Name of tax payer</label>
-                                  <div class="form-group">
-                                      <input class="form-control" type="text" placeholder="Last Name        First Name              Middle Name">
-                                  </div>
-                                </div>
-                                <div class="col-sm-4">
-                                      <label id="form-labels" for="">Business Name</label>
-                                      <div class="form-group">
-                                          <input class="form-control" type="text">
-                                      </div>
-                                </div>
-                              </div>
-                                  <!-- 
-                            5th row form
-                        -->
-                        <div class="row">
-                                <div class="col-sm-8">
-                                      <label id="form-labels" for="">Name of president/treasurer of corporation</label>
-                                  <div class="form-group">
-                                      <input class="form-control" type="text" placeholder="Last Name        First Name              Middle Name">
-                                  </div>
-                                </div>
-                                <div class="col-sm-4">
-                                      <label id="form-labels" for="">tradename/franchise name</label>
-                                      <div class="form-group">
-                                          <input class="form-control" type="text">
-                                      </div>
-                                </div>
-                              </div>
-                                  <!-- 
-                            6th row form
-                        -->
-                        <div class="row">
-                                <div class="col-sm-12">
-                                      <label id="form-labels" for="">Complete business Address</label>
-                                  <div class="form-group">
-                                      <input class="form-control" type="text" placeholder="House No/Building No.        Street              Barangay">
-                                  </div>
-                                </div>
-                              </div>
-                                    <!-- 
-                            7th row form
-                        -->
-                        <div class="row">
-                                <div class="col-sm-12">
-                                      <label id="form-labels" for="">Complete owner's Address</label>
-                                  <div class="form-group">
-                                      <input class="form-control" type="text" placeholder="House No/Building No.        Street              Barangay">
-                                  </div>
-                                </div>
-                              </div>
-                              <!-- 
-                            8th row form
-                        -->
-                        <div class="row">
-                                <div class="col-sm-3">
-                                      <label id="form-labels" for="">Contact number</label>
-                                  <div class="form-group">
-                                      <input class="form-control" type="text">
-                                  </div>
-                                </div>
-                                <div class="col-sm-3">
-                                      <label id="form-labels" for="">Business Area</label>
-                                      <div class="form-group">
-                                          <input class="form-control" type="text" placeholder="In square meters">
-                                      </div>
-                                </div>
-                                <div class="col-sm-3">
-                                      <label id="form-labels" for="">Place of Business</label>
-                                      <div class="form-select">
-                                          <select>
-                                              <option>Rented</option>
-                                              <option>Owned</option>
-                                          </select>
-                                      </div>
-                                </div>
-                                <div class="col-sm-3">
-                                        <label id="form-labels" for="">Monthly Rental</label>
-                                        <input class="form-control" type="text">
-                                    </div>
-                                
-                                    <!-- 
-                                        //// number of employees and machineries
-                                    -->
-                                <div class="row">
-                                    <!--
-                                        Number of Employees
-                                    -->
-                                <div class="container-number-of-emp" style="margin-left: 30px;">
-                                    <h4>Number of Employees</h4>
-                                    <div class="emp-group">
-                                        <input type="text">
-                                        <span>Manager</span>
-                                    </div>
-                                    <div class="emp-group">
-                                        <input type="text">
-                                        <span>Supervisor</span>
-                                    </div>
-                                    <div class="emp-group">
-                                        <input type="text">
-                                        <span>Cashier</span>
-                                    </div>
-                                    <div class="emp-group">
-                                        <input type="text">
-                                        <span>Rank & File</span>
-                                    </div>
-                                </div>
-                                    <!--
-                                        Number of Machineries
-                                    -->
-                                    <div class="container-number-of-emp" style="margin-left: 40px;">
-                                        <h4>Number of Machines</h4>
-                                        <div class="emp-group">
-                                            <input type="text">
-                                            <span>Elevator</span>
-                                        </div>
-                                        <div class="emp-group">
-                                            <input type="text">
-                                            <span>Escalator</span>
-                                        </div>
-                                        <div class="emp-group">
-                                            <input type="text">
-                                            <span>Air Conditioner</span>
-                                        </div>
-                                        <div class="emp-group">
-                                            <input type="text">
-                                            <span>CCTVs</span>
-                                        </div>
-                                    </div>
-
+                    </div>
+                    <div class="col-lg">
+                        <label id="form-labels" for="">Amendments</label>
+                        <div class="form-select">
+                            <select>
+                                <option value="From_Single_to_Partnership">From Single to Partnership</option>
+                                <option value="From_Single_to_Corporation">From Single to Corporation</option>
+                                <option value="From_Partnership_to_Single">From Partnership to Single</option>
+                                <option value="From_Partnership_to_Corporation">From Partnership to Corporation</option>
+                                <option value="From_Corporation_to_Single">From Corporation to Single</option>
+                                <option value="From_Corporation_to_Partnership">From Corporation to Partnership</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-lg">
+                        <label id="form-labels" for="">Transfer</label>
+                        <div class="form-select">
+                            <select>
+                                <option value="Location">Location</option>
+                                <option value="Ownership">Ownership</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-lg">
+                        <label id="form-labels" for="">Mode of payment</label>
+                        <div class="form-select">
+                            <select>
+                                <option value="Annual">Annual</option>
+                                <option value="Semi-Annually">Semi-Annually</option>
+                                <option value="Quarterly">Quarterly</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <!-- 2nd row form -->
+                <div class="row">
+                    <div class="col-sm-3">
+                            <label id="form-labels" for="">Type of Organization</label>
+                        <div class="form-select">
+                            <select id="form-select">
+                                <option value="Sole Proprietorship">Sole Proprietorship</option>
+                                <option value="Partnership">Partnership</option>
+                                <option value="Corporation">Corporation</option>
+                                <option value="Cooperative">Cooperative</option>
+                            </select>
+                        </div>
+                        <input class="form-check-input" id="stock" value="Non-Stock/Non-Profit" type="checkbox"></input>
+                            <label value="Non-Stock/Non-Profit" for="stock"></label><br>
+                            <input class="form-check-input" id="proprietary" value="Proprietary" type="checkbox"></input>
+                            <label value="Proprietary" for="proprietary"></label>
+                    </div>
+                    <div class="col-sm-4">
+                            <label id="form-labels" for="">CTC Number</label>
+                            <div class="form-group">
+                            <input class="form-control" type="text">
+                            </div>
+                    </div>
+                    <div class="col-sm">
+                            <label id="form-labels" for="">Tin Number</label>
+                            <div class="form-group">
+                            <input class="form-control" type="text">
+                            </div>
+                    </div>
+                </div>
+                <!-- 3nd row form -->
+                <div class="row">
+                    <div class="col-sm-8">
+                            <label id="form-labels" for="">DTI/SEC/CDA REGISTRATION NUMBER</label>
+                        <div class="form-group">
+                            <input type="text" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                            <label id="form-labels" for="">D.O.R</label>
+                            <div class="form-group">
+                                <input class="form-control" type="date">
+                            </div>
+                    </div>
+                </div>
+                <!-- 4th row form -->
+                <div class="row">
+                    <div class="col-sm-8">
+                            <label id="form-labels" for="">Name of tax payer</label>
+                        <div class="form-group">
+                            <input class="form-control" type="text" placeholder="Last Name        First Name              Middle Name">
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                            <label id="form-labels" for="">Business Name</label>
+                            <div class="form-group">
+                                <input class="form-control" type="text">
+                            </div>
+                    </div>
+                </div>
+                <!-- 5th row form -->
+                <div class="row">
+                    <div class="col-sm-8">
+                            <label id="form-labels" for="">Name of president/treasurer of corporation</label>
+                        <div class="form-group">
+                            <input class="form-control" type="text" placeholder="Last Name        First Name              Middle Name">
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                            <label id="form-labels" for="">tradename/franchise name</label>
+                            <div class="form-group">
+                                <input class="form-control" type="text">
+                            </div>
+                    </div>
+                </div>
+                <!-- 6th row form -->
+                <div class="row">
+                    <div class="col-sm-12">
+                            <label id="form-labels" for="">Complete business Address</label>
+                        <div class="form-group">
+                            <input class="form-control" type="text" placeholder="House No/Building No.        Street              Barangay">
+                        </div>
+                    </div>
+                </div>
+                <!-- 7th row form-->
+                <div class="row">
+                    <div class="col-sm-12">
+                            <label id="form-labels" for="">Complete owner's Address</label>
+                        <div class="form-group">
+                            <input class="form-control" type="text" placeholder="House No/Building No.        Street              Barangay">
+                        </div>
+                    </div>
+                </div>
+                <!-- 8th row form -->
+                <div class="row">
+                    <div class="col-sm-3">
+                            <label id="form-labels" for="">Contact number</label>
+                        <div class="form-group">
+                            <input class="form-control" type="text">
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <label id="form-labels" for="">Business Area</label>
+                        <div class="form-group">
+                            <input class="form-control" type="text" placeholder="In square meters">
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <label id="form-labels" for="">Place of Business</label>
+                        <div class="form-select">
+                            <select>
+                                <option>Rented</option>
+                                <option>Owned</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <label id="form-labels" for="">Monthly Rental</label>
+                        <input class="form-control" type="text">
+                    </div>
+                            
+                    <!-- Number of employees and machineries -->
+                    <div class="row">
+                        <!-- Number of Employees -->
+                        <div class="container-number-of-emp" style="margin-left: 30px;">
+                            <h4>Number of Employees</h4>
+                            <div class="emp-group">
+                                <input type="text">
+                                <span>Manager</span>
+                            </div>
+                            <div class="emp-group">
+                                <input type="text">
+                                <span>Supervisor</span>
+                            </div>
+                            <div class="emp-group">
+                                <input type="text">
+                                <span>Cashier</span>
+                            </div>
+                            <div class="emp-group">
+                                <input type="text">
+                                <span>Rank & File</span>
+                            </div>
+                        </div>
+                        <!-- Number of Machineries -->
+                        <div class="container-number-of-emp" style="margin-left: 40px;">
+                            <h4>Number of Machines</h4>
+                            <div class="emp-group">
+                                <input type="text">
+                                <span>Elevator</span>
+                            </div>
+                            <div class="emp-group">
+                                <input type="text">
+                                <span>Escalator</span>
+                            </div>
+                            <div class="emp-group">
+                                <input type="text">
+                                <span>Air Conditioner</span>
+                            </div>
+                            <div class="emp-group">
+                                <input type="text">
+                                <span>CCTVs</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 9th row form -->
+                <div class="row">
+                    <div class="col-sm-6">
+                            <label id="form-labels" for="">Lessor's Name</label>
+                        <div class="form-group">
+                            <input class="form-control" type="text" placeholder="Last Name        First Name              Middle Name">
+                        </div>
+                    </div>
+                    
+                    <div class="col-sm-6">
+                            <label id="form-labels" for="">Area of signboard / Billboard</label>
+                            <div class="form-group" style="display:flex;flex-flow:row wrap;justify-content:space-between">
+                                <input class="form-control" style="width: 48%" type="text" placeholder="In square meters">
+                                <div class="form-select" style="width: 48%">
+                                    <select>
+                                        <option value="Annual">With Light</option>
+                                        <option value="Annual">Without Light</option>
+                                    </select>
                                 </div>
                             </div>
-                              <!-- 
-                            9th row form
-                        -->
-                        <div class="row">
-                                <div class="col-sm-6">
-                                      <label id="form-labels" for="">Lessor's Name</label>
-                                  <div class="form-group">
-                                      <input class="form-control" type="text" placeholder="Last Name        First Name              Middle Name">
-                                  </div>
-                                </div>
-                                
-                                <div class="col-sm-6">
-                                      <label id="form-labels" for="">Area of signboard / Billboard</label>
-                                      <div class="form-group" style="display:flex;flex-flow:row wrap;justify-content:space-between">
-                                            <input class="form-control" style="width: 48%" type="text" placeholder="In square meters">
-                                            <div class="form-select" style="width: 48%">
-                                                <select>
-                                                    <option value="Annual">With Light</option>
-                                                    <option value="Annual">Without Light</option>
-                                                </select>
-                                            </div>
-                                      </div>
-                                </div>
-                              </div>
-                                 <!-- 
-                            10th row form
-                        -->
-                        <div class="row">
-                                <div class="col-sm-12">
-                                      <label id="form-labels" for="">Lessor's Address</label>
-                                  <div class="form-group">
-                                      <input class="form-control" type="text" placeholder="House No/Building No.                                              Street                                                                           Barangay                                         City/Municipality">
-                                  </div>
-                                </div>
-                              </div>
-                              <hr>
-                              <div class="container-instructions">
-                                    <h4>Instructions</h4>
-                                    <ol>
-                                        <div class="row">
-                                        <li>Please upload the files according to their appropriate name:</li>
-                                        </div>
-                                        <ul class="requirements">
-                                            <li>DTI Clearance</li>
-                                            <li>Certificate of Prop Holdings</li>
-                                            <li>Occupational Permit</li>
-                                            <li>Old Business Permit</li>
-                                            <li>Contract of Lease</li>
-                                            <li>CCENRO Certificate</li>
-                                            <li>Barangay Clearance</li>
-                                            <li>Sanitary Permit</li>
-                                            <li>Barangay Clearance OR</li>
-                                            <li>Fire and Safety Inspection Cert.</li>
-                                            <span style="opacity:0.5">[insert additional required files</span>
-                                        </ul>
-                                    </ol>
-                                </div>
-                                <div class="downloads">
-                                    <button id="btn-caps" class="btn btn-primary">Download business activity chart</button>
-                                    <button id="btn-caps" class="btn btn-primary">Download Attestation</button>
-                                    <button id="btn-caps" class="btn btn-primary">Download joint inspection report</button>
-                                </div>
-                                <!-- <center> 
-                                <div class="container-business-chart">
-                                    <div class="business-chart">
-                                <div class="row">
-                                    <div class="col-sm-12">
-                                        <div class="container-bordered-fred">
-                                            <p id="margin-txt">Business_Activity_Chart.pdf<span id="accepted">Accepted</span></p>
-                                            
-                                        </div>
-                                    </div>
-                                    </div>
-                                </div>
-                                <div class="business-chart">
-                                    <div class="row">
-                                            <div class="col-sm-12">
-                                                <div class="container-bordered-fred-2">
-                                                    <p id="margin-txt">Business_Activity_Chart.pdf<span id="declined">Unrecognized Document</span></p>
-                                                </div>
-                                            </div>
-                                            </div>
-                                        </div>
-                                <div class="business-chart">
-                                    <div class="row">
-                                    <div class="col-sm-12">
-                                        <div class="container-bordered-fred">
-                                            <p id="margin-txt">Business_Activity_Chart.pdf<span id="accepted">Accepted</span></p>
-                                        </div>
-                                    </div>
-                                    </div>
-                                </div>
-                                </div>
-                                </center> -->
-                                </div>
-                                <center><br><br>
-                                        <button id="btn-caps" class="btn btn-primary">upload pdf files</button>
-                                </center>
-                                <!--
-                                    ----------------------------------------------------------------------
-                                    border line
-                                -->
-                                <div class="container-email-phone">
-                                <div class="row">
-                                    <div class="col-sm-6">
-                                        <label id="form-labels" for="">Email</label>
-                                        <div class="form-group">
-                                            <input required class="form-control" type="email" placeholder="your-email@mail.com">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                        <div class="col-sm-6">
-                                            <label id="form-labels" for="">Phone Number</label>
-                                            <div class="form-group">
-                                                <input required class="form-control" type="text" placeholder="+63 |">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <center>
-                              <input onclick="application-sent.html" style="background-color: #616193; color:white;" class="btn btn-lg" type="submit" value="SUBMIT APPLICATION"> 
-                                </center> 
-                    </form>
-                      </div>
+                    </div>
+                </div>
+                <!-- 10th row form-->
+                <div class="row">
+                    <div class="col-sm-12">
+                            <label id="form-labels" for="">Lessor's Address</label>
+                        <div class="form-group">
+                            <input class="form-control" type="text" placeholder="House No/Building No.                                              Street                                                                           Barangay                                         City/Municipality">
+                        </div>
+                    </div>
+                </div>             
             </div>
+            <br>
+            <hr>
+            <!-- <div class="container-instructions">
+                <h4>Instructions</h4>
+                <ol>
+                    <div class="row">
+                    <li>Please upload the files according to their appropriate name:</li>
+                    </div>
+                    <ul class="requirements">
+                        <li>DTI Clearance</li>
+                        <li>Certificate of Prop Holdings</li>
+                        <li>Occupational Permit</li>
+                        <li>Old Business Permit</li>
+                        <li>Contract of Lease</li>
+                        <li>CCENRO Certificate</li>
+                        <li>Barangay Clearance</li>
+                        <li>Sanitary Permit</li>
+                        <li>Barangay Clearance OR</li>
+                        <li>Fire and Safety Inspection Cert.</li>
+                        <span style="opacity:0.5">[insert additional required files</span>
+                    </ul>
+                </ol>
+            </div> -->
+            <center>
+            <input onclick="upload-docs" style="background-color: #616193; color:white;" class="btn btn-lg" type="submit" value="UPLOAD DOCUMENTS"> 
+            </center> 
         </section>
         <!--================Contact Area =================-->
         
-         <!--================Footer Area =================-->
+        <!--================Footer Area =================-->
          <footer class="footer_area p_120">
-                <div class="container">
-                                <p id="footer-area">
-    Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | Project-Government-Online</p>
-                </div>
-            </footer>
-            <!--================End Footer Area =================-->
+            <div class="container">
+            <p id="footer-area">
+            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | Project-Government-Online</p>
+            </div>
+        </footer>
+        <!--================End Footer Area =================-->
             
         
         <!--================Contact Success and Error message Area =================-->
