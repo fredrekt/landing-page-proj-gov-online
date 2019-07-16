@@ -3404,7 +3404,9 @@ p#lrf-txt{
   }
 
 .progbar li.pb::before {
-  border: 1px solid #e9e9e9;
+  border-top: 1px solid #e9e9e9;
+  border-bottom: 1px solid #e9e9e9;
+  border-left: 1px solid #e9e9e9;
   position: absolute;
   content: '';
   width: 105%;
@@ -3415,6 +3417,10 @@ p#lrf-txt{
   background-color:#F7F7F7;
   z-index: -1;
 }
+  .progbar li.pb:last-child::before{
+    border-right: 1px solid #e9e9e9;
+  }
+
   .progbar li.pb.active::before {
     background-color:white;   
   }
@@ -3426,24 +3432,22 @@ p#lrf-txt{
 .progbar li.pb::after {
   position: absolute;
   content: '';
-  background-color: #F7F7F7;
-  transform: rotate(-45deg);
-  border-top: 43px solid transparent;
-  border-left: 43px solid transparent;
-  top: -10px;
-  right: -6%;
+  border-top: 30.2px solid transparent;
+  border-bottom: 30.2px solid transparent;
+  border-left: 30.2px solid #F7F7F7;
+  top: -19px;
+  right: -30px;
   bottom: 0px;
   z-index: 2;
 }
+  .progbar li:last-child::after {
+    display: none;
+  }
+
   .progbar li.pb.active::after {
-    background-color: white;
+    border-left: 30px solid white;
   }
 
   .progbar li.pb.done::after {
-    background-color: #43B581;
+    border-left: 30px solid #43B581;
   }
-
-
-.progbar li:last-child::after {
-  display: none;
-}
