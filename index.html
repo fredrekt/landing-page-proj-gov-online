@@ -1,281 +1,172 @@
-<!doctype html>
-<html lang="en">
-    <head>
-        <!-- Required meta tags -->
-        <meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-		<meta name="description" content="Project Government Online">
-		<!-- <link rel="icon" href="img/favicon.png" type="image/png"> -->
-        <title>Project Government Online</title>
-        <!-- Bootstrap CSS -->
-        <link rel="stylesheet" href="css/bootstrap.css">
-        <link rel="stylesheet" href="vendors/linericon/style.css">
-        <link rel="stylesheet" href="css/font-awesome.min.css">
-        <link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css">
-        <link rel="stylesheet" href="vendors/lightbox/simpleLightbox.css">
-        <link rel="stylesheet" href="vendors/nice-select/css/nice-select.css">
-        <link rel="stylesheet" href="vendors/animate-css/animate.css">
-        <link rel="stylesheet" href="vendors/flaticon/flaticon.css">
-        <!-- main css -->
-        <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="css/responsive.css">
-    </head>
-    <body>
-        
-        <!--================Header Menu Area =================-->
-        <header class="header_area">
-            <div class="main_menu">
-            	<nav class="navbar navbar-expand-lg navbar-dark">
-					<div class="container box_1620">
-						<!-- Brand and toggle get grouped for better mobile display -->
-						<a class="navbar-brand logo_h" href="/"><img src="img/logohere.png" width="350px" alt=""></a>
-						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-						</button>
-						<!-- Collect the nav links, forms, and other content for toggling -->
-						<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
-							<ul class="nav navbar-nav menu_nav justify-content-center">
-								<li class="nav-item active"><a class="nav-link" href="/">Home</a></li> 
-								<li class="nav-item"><a class="nav-link" href="/about-us">About</a></li> 
-								<li class="nav-item"><a class="nav-link" href="#steps_area">How It Works</a>
-								<li class="nav-item submenu dropdown">
-									<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">e-Services</a>
-									<ul class="dropdown-menu">
-										<li class="nav-item"><a class="nav-link" href="/business-permit">Business Permit</a></li>
-										<li class="nav-item"><a class="nav-link" href="#">BIR</a></li>				
-										<li class="nav-item"><a class="nav-link" href="#">Business Name Registration</a></li>
-										<li class="nav-item"><a class="nav-link" href="#">Barangay Clearance</a></li>	
-										<li class="nav-item"><a class="nav-link" href="#">Fire Permit</a></li>									
-										<li class="nav-item"><a class="nav-link" href="#">License Renewal</a></li>
-										<li class="nav-item"><a class="nav-link" href="#">NBI Clearance</a></li>		
-										<li class="nav-item"><a class="nav-link" href="#">Official Receipt Printing</a></li>
-										<li class="nav-item"><a class="nav-link" href="#">Police Clearance</a></li>
-										<li class="nav-item"><a class="nav-link" href="#">SEC Registration</a></li>		
-										<li class="nav-item"><a class="nav-link" href="#">Sanitary Permit</a></li>	
-									</ul>
-								</li> 
-								<li class="nav-item"><a class="nav-link" href="/contact">Contact</a></li>
-							</ul>
-						</div> 
-					</div>
-            	</nav>
-            </div>
-        </header>
-        <!--================Header Menu Area =================-->
-        
-        <!--================Home Banner Area =================-->
-        <section class="home_banner_area">
-            <div class="banner_inner">
-				<div class="container">
-					<div class="row">
-						<div class="col-lg-5">
-							<div class="banner_content">
-								<h2>Philippine Government<br />Services</h2>
-								<p>Its time to make changes! Make its services to be available online. No need to move to get your papers processed. Business Permits, Sanitary Permits, Fire Permits, BIR Permits and many other made available online to the people of Philippines.</p>
-								<a class="banner_btn" href="#features_area">Learn More</a>
-								<!-- 
+{% extends "base.html" %}
+{% block content %}
+<!--================Home Banner Area =================-->
+<section class="home_banner_area">
+	<div class="banner_inner">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-5">
+					<div class="banner_content">
+						<h2>Philippine Government<br />Services</h2>
+						<p>Its time to make changes! Make its services to be available online. No need to move to get your papers processed. Business Permits, Sanitary Permits, Fire Permits, BIR Permits and many other made available online to the people of Philippines.</p>
+						<a class="banner_btn" href="#features_area">Learn More</a>
+						<!-- 
 
-									/// COMMENTED FOR FURTHER INSTRUCTIONS ///
-								<a class="banner_btn" href="#">Get Started</a>
-								<a class="banner_btn2" href="#">Download</a>
-								-->
+							/// COMMENTED FOR FURTHER INSTRUCTIONS ///
+						<a class="banner_btn" href="#">Get Started</a>
+						<a class="banner_btn2" href="#">Download</a>
+						-->
+					</div>
+				</div>
+				<div class="col-lg-7">
+					<div class="home_left_img">
+						<img class="img-fluid" src="img/banner/Cebu.png" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!--================End Home Banner Area =================-->
+
+<!--================Features Area =================-->
+<section id="features_area" class="work_area p_120">
+	<div class="container">
+		<div class="main_title">
+			<h2>Features</h2>
+		</div>
+		<div class="work_inner row">
+			<div class="col-lg-4">
+				<div class="work_item">
+					<i class="lnr lnr-screen"></i>
+					<a href="#"><h4>Accessible</h4></a>
+					<p>You don't need to physically go somewhere to process your Goverment papers. You just need to go online, fill up the forms and voila!</p>
+				</div>
+			</div>
+			<div class="col-lg-4">
+				<div class="work_item">
+					<i class="lnr lnr-clock"></i>
+					<a href="#"><h4>Quick and Easy</h4></a>
+					<p>Upon approval of your government papers, it will be delivered right at your doorstep. Its that easy!</p>
+				</div>
+			</div>
+			<div class="col-lg-4">
+				<div class="work_item">
+					<i class="lnr lnr-code"></i>
+					<a href="#"><h4>Secure</h4></a>
+					<p>Both sides are protected and developed to be secure and government papers are approved carefully and securely.</p>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+</section>
+<!--================End Features Area =================-->
+
+<!--================ Steps Area =================-->
+<section id="steps_area" class="made_life_area p_120">
+	<div class="container">
+			<h1 id="made-life-header">STEPS IN APPLYING</h1>
+		<div class="made_life_inner">
+			<ul class="nav nav-tabs" id="myTab" role="tablist">
+				<li class="nav-item">
+				<a class="nav-link active" id="step-1" data-toggle="tab" href="#input" role="tab" aria-controls="input" aria-selected="true">Input</a>
+				</li>
+				<li class="nav-item">
+				<a class="nav-link" id="step-2" data-toggle="tab" href="#submit" role="tab" aria-controls="submit" aria-selected="false">Submit</a>
+				</li>
+				<li class="nav-item">
+				<a class="nav-link" id="step-3" data-toggle="tab" href="#make" role="tab" aria-controls="make" aria-selected="false">Pay</a>
+				</li>
+				<li class="nav-item">
+				<a class="nav-link" id="step-4" data-toggle="tab" href="#ack" role="tab" aria-controls="ack" aria-selected="false">Acknowledgment</a>
+				</li>
+				<li class="nav-item">
+				<a class="nav-link" id="step-5" data-toggle="tab" href="#delivery" role="tab" aria-controls="delivery" aria-selected="false">Delivery</a>
+				</li>
+			</ul>
+			<div class="tab-content" id="myTabContent">
+				<div class="tab-pane fade show active" id="input" role="tabpanel" aria-labelledby="input-tab">
+					<div class="row made_life_text">
+						<div class="col-lg-6">
+							<div class="left_side_text">
+								<h3>Input Application Details</h3>
+								<p>Input your application details and needed requirements in correspond to the permit or 
+									clearance you are applying for. A list of application form is provided for your convenience.</p>
 							</div>
 						</div>
-						<div class="col-lg-7">
-							<div class="home_left_img">
-								<img class="img-fluid" src="img/banner/Cebu.png" alt="">
+						<div class="col-lg-6">
+							<div class="chart_img">
+								<img class="img-fluid" src="img/steps/step1_img.png" alt="">
 							</div>
 						</div>
 					</div>
 				</div>
-            </div>
-        </section>
-        <!--================End Home Banner Area =================-->
-        
-        <!--================Features Area =================-->
-        <section id="features_area" class="work_area p_120">
-        	<div class="container">
-        		<div class="main_title">
-					<h2>Features</h2>
-        		</div>
-        		<div class="work_inner row">
-        			<div class="col-lg-4">
-        				<div class="work_item">
-        					<i class="lnr lnr-screen"></i>
-        					<a href="#"><h4>Accessible</h4></a>
-        					<p>You don't need to physically go somewhere to process your Goverment papers. You just need to go online, fill up the forms and voila!</p>
-        				</div>
-					</div>
-					<div class="col-lg-4">
-        				<div class="work_item">
-        					<i class="lnr lnr-clock"></i>
-        					<a href="#"><h4>Quick and Easy</h4></a>
-        					<p>Upon approval of your government papers, it will be delivered right at your doorstep. Its that easy!</p>
-        				</div>
-        			</div>
-        			<div class="col-lg-4">
-        				<div class="work_item">
-        					<i class="lnr lnr-code"></i>
-        					<a href="#"><h4>Secure</h4></a>
-        					<p>Both sides are protected and developed to be secure and government papers are approved carefully and securely.</p>
-        				</div>
-        			</div>
-        			
-        		</div>
-        	</div>
-        </section>
-        <!--================End Features Area =================-->
-        
-        <!--================ Steps Area =================-->
-        <section id="steps_area" class="made_life_area p_120">
-        	<div class="container">
-					<h1 id="made-life-header">STEPS IN APPLYING</h1>
-        		<div class="made_life_inner">
-					<ul class="nav nav-tabs" id="myTab" role="tablist">
-						<li class="nav-item">
-						<a class="nav-link active" id="step-1" data-toggle="tab" href="#input" role="tab" aria-controls="input" aria-selected="true">Input</a>
-						</li>
-						<li class="nav-item">
-						<a class="nav-link" id="step-2" data-toggle="tab" href="#submit" role="tab" aria-controls="submit" aria-selected="false">Submit</a>
-						</li>
-						<li class="nav-item">
-						<a class="nav-link" id="step-3" data-toggle="tab" href="#make" role="tab" aria-controls="make" aria-selected="false">Pay</a>
-						</li>
-						<li class="nav-item">
-						<a class="nav-link" id="step-4" data-toggle="tab" href="#ack" role="tab" aria-controls="ack" aria-selected="false">Acknowledgment</a>
-						</li>
-						<li class="nav-item">
-						<a class="nav-link" id="step-5" data-toggle="tab" href="#delivery" role="tab" aria-controls="delivery" aria-selected="false">Delivery</a>
-						</li>
-					</ul>
-					<div class="tab-content" id="myTabContent">
-						<div class="tab-pane fade show active" id="input" role="tabpanel" aria-labelledby="input-tab">
-							<div class="row made_life_text">
-								<div class="col-lg-6">
-									<div class="left_side_text">
-										<h3>Input Application Details</h3>
-										<p>Input your application details and needed requirements in correspond to the permit or 
-											clearance you are applying for. A list of application form is provided for your convenience.</p>
-									</div>
-								</div>
-								<div class="col-lg-6">
-									<div class="chart_img">
-										<img class="img-fluid" src="img/steps/step1_img.png" alt="">
-									</div>
-								</div>
+				<div class="tab-pane fade" id="submit" role="tabpanel" aria-labelledby="submit-tab">
+					<div class="row made_life_text">
+						<div class="col-lg-6">
+							<div class="left_side_text">
+								<h3>Submit Application</h3>
+								<p>After filling out the needed forms and requirements submit your application.</p>
 							</div>
 						</div>
-						<div class="tab-pane fade" id="submit" role="tabpanel" aria-labelledby="submit-tab">
-							<div class="row made_life_text">
-								<div class="col-lg-6">
-									<div class="left_side_text">
-										<h3>Submit Application</h3>
-										<p>After filling out the needed forms and requirements submit your application.</p>
-									</div>
-								</div>
-								<div class="col-lg-6">
-									<div class="chart_img">
-										<img class="img-fluid" src="img/steps/step2_img.png" alt="">
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="tab-pane fade" id="make" role="tabpanel" aria-labelledby="make-tab">
-							<div class="row made_life_text">
-								<div class="col-lg-6">
-									<div class="left_side_text">
-										<h3>Make Payment</h3>
-										<p>In different application there’ll be necessary payments needed. You can choose different payment methods for your convenience.</p>
-									</div>
-								</div>
-								<div class="col-lg-6">
-									<div class="chart_img">
-										<img class="img-fluid" src="img/steps/step3_img.png" alt="">
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="tab-pane fade" id="ack" role="tabpanel" aria-labelledby="ack-tab">
-							<div class="row made_life_text">
-								<div class="col-lg-6">
-									<div class="left_side_text">
-										<h3>Acknowledgement</h3>
-										<p>Wait for your application to get approved by the government.</p>
-									</div>
-								</div>
-								<div class="col-lg-6">
-									<div class="chart_img">
-										<img class="img-fluid" src="img/steps/step4_img.png" alt="">
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="tab-pane fade" id="delivery" role="tabpanel" aria-labelledby="delivery-tab">
-							<div class="row made_life_text">
-								<div class="col-lg-6">
-									<div class="left_side_text">
-										<h3>Delivery</h3>
-										<p> No need to physically go to offices as your document will be on your doorstep. Just choose delivery method of your liking and you are document is already in your hands</p>
-									</div>
-								</div>
-								<div class="col-lg-6">
-									<div class="chart_img">
-										<img class="img-fluid" src="img/steps/step5_img.png" alt="">
-									</div>
-								</div>
+						<div class="col-lg-6">
+							<div class="chart_img">
+								<img class="img-fluid" src="img/steps/step2_img.png" alt="">
 							</div>
 						</div>
 					</div>
-        		</div>
-        	</div>
-        </section>
-        <!--================Steps Area =================-->
+				</div>
+				<div class="tab-pane fade" id="make" role="tabpanel" aria-labelledby="make-tab">
+					<div class="row made_life_text">
+						<div class="col-lg-6">
+							<div class="left_side_text">
+								<h3>Make Payment</h3>
+								<p>In different application there’ll be necessary payments needed. You can choose different payment methods for your convenience.</p>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="chart_img">
+								<img class="img-fluid" src="img/steps/step3_img.png" alt="">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="tab-pane fade" id="ack" role="tabpanel" aria-labelledby="ack-tab">
+					<div class="row made_life_text">
+						<div class="col-lg-6">
+							<div class="left_side_text">
+								<h3>Acknowledgement</h3>
+								<p>Wait for your application to get approved by the government.</p>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="chart_img">
+								<img class="img-fluid" src="img/steps/step4_img.png" alt="">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="tab-pane fade" id="delivery" role="tabpanel" aria-labelledby="delivery-tab">
+					<div class="row made_life_text">
+						<div class="col-lg-6">
+							<div class="left_side_text">
+								<h3>Delivery</h3>
+								<p> No need to physically go to offices as your document will be on your doorstep. Just choose delivery method of your liking and you are document is already in your hands</p>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="chart_img">
+								<img class="img-fluid" src="img/steps/step5_img.png" alt="">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!--================Steps Area =================-->
+
+{% endblock content %}
         
-        <!--================Impress Area =================-->
-        <section class="impress_area p_120">
-        	<div class="container">
-        		<div class="impress_inner">
-					<h2>Want to talk?</h2>
-					<p>This Project is made with  <i class="fa fa-heart-o" aria-hidden="true"></i > by Symph</p>
-					<a class="banner_btn2" href="https://www.symph.co/about/">What is Symph?</a>
-        		</div>
-        	</div>
-        </section>
-        <!--================End Impress Area =================-->
-        
-        <!--================Footer Area =================-->
-        <footer class="footer_area p_120">
-        	<div class="container">
-        					<p id="footer-area">
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | Project-Government-Online</p>
-        	</div>
-        </footer>
-        <!--================End Footer Area =================-->
-        
-        
-        
-        
-        
-        <!-- Optional JavaScript -->
-        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-        <script src="js/jquery-3.2.1.min.js"></script>
-        <script src="js/popper.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-        <script src="js/stellar.js"></script>
-        <script src="vendors/lightbox/simpleLightbox.min.js"></script>
-        <script src="vendors/nice-select/js/jquery.nice-select.min.js"></script>
-        <script src="vendors/isotope/imagesloaded.pkgd.min.js"></script>
-        <script src="vendors/isotope/isotope-min.js"></script>
-        <script src="vendors/owl-carousel/owl.carousel.min.js"></script>
-        <script src="js/jquery.ajaxchimp.min.js"></script>
-        <script src="vendors/counter-up/jquery.waypoints.min.js"></script>
-        <script src="vendors/counter-up/jquery.counterup.min.js"></script>
-        <script src="js/mail-script.js"></script>
-        <!--gmaps Js-->
-        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
-        <script src="js/gmaps.min.js"></script>
-        <script src="js/theme.js"></script>
-    </body>
-</html>

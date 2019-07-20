@@ -1,268 +1,164 @@
-<!doctype html>
-<html lang="en">
-    <head>
-        <!-- Required meta tags -->
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <!-- <link rel="icon" href="img/favicon.png" type="image/png"> -->
-        <title>About Project Government Online</title>
-        <!-- Bootstrap CSS -->
-        <link rel="stylesheet" href="css/bootstrap.css">
-        <link rel="stylesheet" href="vendors/linericon/style.css">
-        <link rel="stylesheet" href="css/font-awesome.min.css">
-        <link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css">
-        <link rel="stylesheet" href="vendors/lightbox/simpleLightbox.css">
-        <link rel="stylesheet" href="vendors/nice-select/css/nice-select.css">
-        <link rel="stylesheet" href="vendors/animate-css/animate.css">
-        <!-- main css -->
-        <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="css/responsive.css">
-    </head>
-    <body>
-        
-        <!--================Header Menu Area =================-->
-        <header class="header_area">
-            <div class="main_menu">
-            	<nav class="navbar navbar-expand-lg navbar-light">
-					<div class="container box_1620">
-						<!-- Brand and toggle get grouped for better mobile display -->
-						<a class="navbar-brand logo_h" href="/"><img src="img/logohere.png" width="350px" alt=""></a>
-						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-						</button>
-						<!-- Collect the nav links, forms, and other content for toggling -->
-						<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
-							<ul class="nav navbar-nav menu_nav justify-content-center">
-								<li class="nav-item active"><a class="nav-link" href="/">Home</a></li> 
-								<li class="nav-item"><a class="nav-link" href="/about-us">About</a></li> 
-								<li class="nav-item"><a class="nav-link" href="./#steps_area">How It Works</a></li> 
-								<li class="nav-item submenu dropdown">
-									<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">e-Services</a>
-									<ul class="dropdown-menu">
-										<li class="nav-item"><a class="nav-link" href="/business-permit">Business Permit</a></li>
-										<li class="nav-item"><a class="nav-link" href="#">BIR</a></li>				
-										<li class="nav-item"><a class="nav-link" href="#">Business Name Registration</a></li>
-										<li class="nav-item"><a class="nav-link" href="#">Barangay Clearance</a></li>	
-										<li class="nav-item"><a class="nav-link" href="#">Fire Permit</a></li>									
-										<li class="nav-item"><a class="nav-link" href="#">License Renewal</a></li>
-										<li class="nav-item"><a class="nav-link" href="#">NBI Clearance</a></li>		
-										<li class="nav-item"><a class="nav-link" href="#">Official Receipt Printing</a></li>
-										<li class="nav-item"><a class="nav-link" href="#">Police Clearance</a></li>
-										<li class="nav-item"><a class="nav-link" href="#">SEC Registration</a></li>		
-										<li class="nav-item"><a class="nav-link" href="#">Sanitary Permit</a></li>	
-									</ul>
-								</li> 
-								<li class="nav-item"><a class="nav-link" href="/contact">Contact</a></li>
-							</ul>
-						</div> 
+{% extends "base.html" %}
+{% block content %}
+<!--================Home Banner Area =================-->
+<section class="banner_area">
+	<div class="banner_inner d-flex align-items-center">
+		<div class="overlay bg-parallax" data-stellar-ratio="0.9" data-stellar-vertical-offset="0" data-background=""></div>
+		<div class="container">
+			<div class="banner_content text-center">
+				<h2>About Us</h2>
+				<div class="page_link">
+					<a href="/">Home</a>
+					<a href="/about-us">About</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!--================End Home Banner Area =================-->
+		
+<!--================Screen Area =================-->
+<section class="screen_area1 text-center p_120">
+	<div class="container">
+		<div class="main_title">
+			<h2>About Our Services</h2>
+		</div>
+		<div class="row made_life_text">
+			<div class="col-lg-12">
+				<p>
+				Government Online Service is an all-in-one service that provide the needs of 
+				the Filipino people. The website does not limit to filling up online forms or 
+				setting up online appointments and going to the offices for a further process; 
+				necessary steps and transactions are provided from filling up forms to choosing 
+				a delivery method for the documents you are to apply for. No hassle in going to 
+				physical offices, especially when it’s far from home. Just complete the requirements
+				from your home, submit it online, pay necessary fees, choose your delivery method
+				and your document is already in your doorstep. 
+				</p>
+			</div>
+		</div>
+		<div class="row made_life_text">
+			<div class="col-lg-12">
+				<h3><br>Objective<br></h3>
+			</div>
+		</div>
+		<div class="row made_life_text">
+			<div class="col-lg-12">
+				<p>
+				Enable and push the PH Government to go digital. Make Government services available online.
+				</p>
+			</div>
+		</div>
+		<div class="row made_life_text">
+			<div class="col-lg-12">
+				<h3><br>E-Services<br></h3>
+			</div>
+		</div>
+		<div class="">
+			<ul class="unordered-list">
+				<li>Business Permit</li>
+				<li>Sanitary Permit</li>
+				<li>Fire Permit</li>
+				<li>BIR Permit</li>
+				<li>SEC registration</li>
+				<li>Business Name registration</li>
+				<li>License Renewal</li>
+				<li>Barangay Clearance</li>
+				<li>NBI Clearance</li>
+				<li>Police Clearance</li>
+				<li>Official Receipt Printing</li>
+			</ul>
+		</div>
+		<!-- <img class="img-fluid" src="img/banner/banner-about.png" alt=""> -->
+	</div>
+</section>
+<!--================End Screen Area =================-->
+
+<!--================Made Life Area =================-->
+<section class="made_life_area p_120">
+	<div class="container">
+		<div class="made_life_inner">
+			<div class="row made_life_text">
+				<div class="col-lg-6">
+					<div class="left_side_text">
+						<h3>We have <br /> everything you need</h3>
+						<h6>We are here to help you and get things done fast!
+						</h6>
+						<p>All the forms you need are located in the E-Services Navigation Bar. Business Permit, Sanitary Permit,Fire Permit, BIR Permit, SEC registration, Business Name registration, License Renewal, Barangay Clearance, NBI Clearance, Police Clearance and Official Receipt Printing
+							</p>
+						<a class="main_btn" href="#">Get Started Now</a>
 					</div>
-            	</nav>
-            </div>
-        </header>
-        <!--================Header Menu Area =================-->
-        
-        <!--================Home Banner Area =================-->
-        <section class="banner_area">
-            <div class="banner_inner d-flex align-items-center">
-            	<div class="overlay bg-parallax" data-stellar-ratio="0.9" data-stellar-vertical-offset="0" data-background=""></div>
-				<div class="container">
-					<div class="banner_content text-center">
-						<h2>About Us</h2>
-						<div class="page_link">
-							<a href="/">Home</a>
-							<a href="/about-us">About</a>
+				</div>
+				<div class="col-lg-6">
+					<div class="chart_img">
+						<img class="img-fluid" src="img/e-services-navbar.png" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!--================End Made Life Area =================-->
+
+<!-- =====================Start about Team=============-->
+<!-- <section class="ftco-section">
+		<div class="container">
+			<h1 id="header-team">Our Team</h1>
+			<div class="row">
+				<div class="col-md-4">
+					<div class="staff">
+						<div class="img" style="background-image: url(img/no-person.jpg);"></div>
+						<div class="text pt-4">
+							<h3>Fredrick Garingo</h3>
+							<span class="position mb-2">Developer Intern</span>
+							<p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
 						</div>
 					</div>
 				</div>
-            </div>
-        </section>
-        <!--================End Home Banner Area =================-->
-                
-        <!--================Screen Area =================-->
-        <section class="screen_area1 text-center p_120">
-        	<div class="container">
-        		<div class="main_title">
-        			<h2>About Our Services</h2>
-				</div>
-				<div class="row made_life_text">
-					<div class="col-lg-12">
-						<p>
-						Government Online Service is an all-in-one service that provide the needs of 
-						the Filipino people. The website does not limit to filling up online forms or 
-						setting up online appointments and going to the offices for a further process; 
-						necessary steps and transactions are provided from filling up forms to choosing 
-						a delivery method for the documents you are to apply for. No hassle in going to 
-						physical offices, especially when it’s far from home. Just complete the requirements
-						from your home, submit it online, pay necessary fees, choose your delivery method
-						and your document is already in your doorstep. 
-						</p>
-					</div>
-				</div>
-				<div class="row made_life_text">
-					<div class="col-lg-12">
-						<h3><br>Objective<br></h3>
-					</div>
-				</div>
-				<div class="row made_life_text">
-					<div class="col-lg-12">
-						<p>
-						Enable and push the PH Government to go digital. Make Government services available online.
-						</p>
-					</div>
-				</div>
-				<div class="row made_life_text">
-					<div class="col-lg-12">
-						<h3><br>E-Services<br></h3>
-					</div>
-				</div>
-				<div class="">
-					<ul class="unordered-list">
-						<li>Business Permit</li>
-						<li>Sanitary Permit</li>
-						<li>Fire Permit</li>
-						<li>BIR Permit</li>
-						<li>SEC registration</li>
-						<li>Business Name registration</li>
-						<li>License Renewal</li>
-						<li>Barangay Clearance</li>
-						<li>NBI Clearance</li>
-						<li>Police Clearance</li>
-						<li>Official Receipt Printing</li>
-					</ul>
-				</div>
-        		<!-- <img class="img-fluid" src="img/banner/banner-about.png" alt=""> -->
-        	</div>
-        </section>
-        <!--================End Screen Area =================-->
-        
-        <!--================Made Life Area =================-->
-        <section class="made_life_area p_120">
-        	<div class="container">
-        		<div class="made_life_inner">
-					<div class="row made_life_text">
-						<div class="col-lg-6">
-							<div class="left_side_text">
-								<h3>We have <br /> everything you need</h3>
-								<h6>We are here to help you and get things done fast!
-								</h6>
-								<p>All the forms you need are located in the E-Services Navigation Bar. Business Permit, Sanitary Permit,Fire Permit, BIR Permit, SEC registration, Business Name registration, License Renewal, Barangay Clearance, NBI Clearance, Police Clearance and Official Receipt Printing
-									</p>
-								<a class="main_btn" href="#">Get Started Now</a>
-							</div>
+				<div class="col-md-4">
+					<div class="staff">
+						<div class="img" style="background-image: url(img/no-person.jpg);"></div>
+						<div class="text pt-4">
+							<h3>Brylle</h3>
+							<span class="position mb-2">Developer Intern</span>
+							<p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
 						</div>
-						<div class="col-lg-6">
-							<div class="chart_img">
-								<img class="img-fluid" src="img/e-services-navbar.png" alt="">
+					</div>
+				</div>
+				<div class="col-md-4">
+						<div class="staff">
+							<div class="img" style="background-image: url(img/no-person.jpg);"></div>
+							<div class="text pt-4">
+								<h3>Manolo</h3>
+								<span class="position mb-2">Developer Intern</span>
+								<p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
 							</div>
 						</div>
 					</div>
-        		</div>
-        	</div>
-        </section>
-        <!--================End Made Life Area =================-->
-        
-              <!--================Impress Area =================-->
-			  <section class="impress_area p_120">
-				<div class="container">
-					<div class="impress_inner">
-						<h2>Want to talk?</h2>
-						<p>This Project is made with  <i class="fa fa-heart-o" aria-hidden="true"></i > by Symph</p>
-						<a class="banner_btn2" href="https://www.symph.co/about/">What is Symph?</a>
-					</div>
 				</div>
-			</section>
-			<!--================End Impress Area =================-->
-			<!-- =====================Start about Team=============-->
-			<!-- <section class="ftco-section">
-					<div class="container">
-						<h1 id="header-team">Our Team</h1>
-						<div class="row">
-							<div class="col-md-4">
-								<div class="staff">
-									<div class="img" style="background-image: url(img/no-person.jpg);"></div>
-									<div class="text pt-4">
-										<h3>Fredrick Garingo</h3>
-										<span class="position mb-2">Developer Intern</span>
-										<p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-4">
-								<div class="staff">
-									<div class="img" style="background-image: url(img/no-person.jpg);"></div>
-									<div class="text pt-4">
-										<h3>Brylle</h3>
-										<span class="position mb-2">Developer Intern</span>
-										<p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-4">
-									<div class="staff">
-										<div class="img" style="background-image: url(img/no-person.jpg);"></div>
-										<div class="text pt-4">
-											<h3>Manolo</h3>
-											<span class="position mb-2">Developer Intern</span>
-											<p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="row">
-							<div class="col-md-6">
-								<div class="staff">
-									<div class="img" style="background-image: url(img/no-person.jpg);"></div>
-									<div class="text pt-4">
-										<h3>Jules</h3>
-										<span class="position mb-2">Project Manager</span>
-										<p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-6">
-								<div class="staff">
-									<div class="img" style="background-image: url(img/no-person.jpg);"></div>
-									<div class="text pt-4">
-										<h3>Elle</h3>
-										<span class="position mb-2">Developer Intern</span>
-										<p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-									</div>
-								</div>
-							</div>
+				<div class="row">
+				<div class="col-md-6">
+					<div class="staff">
+						<div class="img" style="background-image: url(img/no-person.jpg);"></div>
+						<div class="text pt-4">
+							<h3>Jules</h3>
+							<span class="position mb-2">Project Manager</span>
+							<p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
 						</div>
 					</div>
-				</section> -->
-			<!--=================End about Team=================== -->
-         <!--================Footer Area =================-->
-		 <footer class="footer_area p_120">
-				<div class="container">
-								<p id="footer-area">
-	Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | Project-Government-Online</p>
 				</div>
-			</footer>
-			<!--================End Footer Area =================-->
-			
-        
-        
-        
-        
-        <!-- Optional JavaScript -->
-        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-        <script src="js/jquery-3.2.1.min.js"></script>
-        <script src="js/popper.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-        <script src="js/stellar.js"></script>
-        <script src="vendors/lightbox/simpleLightbox.min.js"></script>
-        <script src="vendors/nice-select/js/jquery.nice-select.min.js"></script>
-        <script src="vendors/isotope/imagesloaded.pkgd.min.js"></script>
-        <script src="vendors/isotope/isotope-min.js"></script>
-        <script src="vendors/owl-carousel/owl.carousel.min.js"></script>
-        <script src="js/jquery.ajaxchimp.min.js"></script>
-        <script src="js/mail-script.js"></script>
-        <script src="vendors/counter-up/jquery.waypoints.min.js"></script>
-        <script src="vendors/counter-up/jquery.counterup.min.js"></script>
-        <script src="js/theme.js"></script>
-    </body>
-</html>
+				<div class="col-md-6">
+					<div class="staff">
+						<div class="img" style="background-image: url(img/no-person.jpg);"></div>
+						<div class="text pt-4">
+							<h3>Elle</h3>
+							<span class="position mb-2">Developer Intern</span>
+							<p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section> -->
+<!--=================End about Team=================== -->
+{% endblock content %}

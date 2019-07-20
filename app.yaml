@@ -1,0 +1,25 @@
+runtime: python27
+api_version: 1
+threadsafe: true
+
+handlers:
+- url: /css
+  static_dir: css
+
+- url: /fonts
+  static_dir: fonts
+
+- url: /img
+  static_dir: img
+
+- url: /js
+  static_dir: js
+
+- url: /scss
+  static_dir: scss
+
+- url: /vendors
+  static_dir: vendors
+
+- url: /.*
+  script: main.app
