@@ -2401,6 +2401,7 @@ h6 {
 @media (max-width: 991px) {
   .left-align-p p {
     margin-top: 20px; } }
+
 .form-select {
   height: 40px;
   width: 100%; }
@@ -2409,16 +2410,23 @@ h6 {
   border: none;
   border-radius: 0px;
   height: 40px;
-  background: #f9f9ff !important;
+  background: #f9f9ff;
   padding-left: 40px;
-  padding-right: 10px;
+  padding-right: 0px;
   width: 100%; }
+
+  @media screen and (max-width: 1000px) {
+    /* .form-select .nice-select {
+      width: 10px; 
+    } */
+  }
 
 .form-select .nice-select .list {
   margin-top: 0;
   border: none;
   border-radius: 0px;
   box-shadow: none;
+  background: #f9f9ff;
   width: 100%;
   padding: 10px 0 10px 0px; }
 
@@ -2432,7 +2440,6 @@ h6 {
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
   line-height: 28px;
-  min-height: 28px;
   font-size: 12px;
   padding-left: 45px; }
 
@@ -2451,6 +2458,74 @@ h6 {
 .form-select .nice-select::after {
   right: 20px; }
 
+/* SPECIAL TYPE OF ORG */
+.form-select-2 {
+  height: 40px;
+  width: 100%; }
+
+.form-select-2 .nice-select {
+  border: none;
+  border-radius: 0px;
+  height: 40px;
+  background: #f9f9ff;
+  padding-left: 40px;
+  padding-right: 0px;
+  width: 100%; }
+
+  @media screen and (min-width: 576px ) and (max-width: 768px ) {
+    .form-select-2 .nice-select {
+      padding-left: 10px; 
+    }
+  }
+
+.form-select-2 .nice-select .list {
+  margin-top: 0;
+  border: none;
+  border-radius: 0px;
+  box-shadow: none;
+  background: #f9f9ff;
+  width: 100%;
+  padding: 10px 0 10px 0px; }
+
+.mt-10 {
+  margin-top: 10px; }
+
+.form-select-2 .nice-select .list .option {
+  font-weight: 300;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  line-height: 28px;
+  font-size: 12px;
+  padding-left: 45px; }
+
+  @media screen and (min-width: 576px ) and (max-width: 768px ) {
+    .form-select-2 .nice-select .list .option {
+      padding-left: 20px; 
+    }
+  }
+
+.form-select-2 .nice-select .list .option.selected {
+  color: #f8b600;
+  background: transparent; }
+
+.form-select-2 .nice-select .list .option:hover {
+  color: #f8b600;
+  background: transparent; }
+
+ .form-select-2 .current {
+  margin-right: 50px;
+  font-weight: 300; }
+
+.form-select-2 .nice-select::after {
+  right: 20px; }
+
+  @media screen and (min-width: 576px ) and (max-width: 768px ) {
+    .form-select-2 .nice-select::after {
+      right: 15px; 
+    }
+  }
 
 /*---------------------------------------------------- */
 /*----------------------------------------------------*/
@@ -3057,11 +3132,12 @@ h1#made-life-header{
 ///////////////////// FOR BUSINESS PERMIT FORM ////////////////
 */
 img#gov-seal{
-  margin-left: 500px;
-  padding: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 p#republic-of-ph{
-  padding: 20px;
+  line-height: 20px;
   font-family: Raleway;
   font-style: normal;
   font-weight: normal;
@@ -3069,16 +3145,18 @@ p#republic-of-ph{
   letter-spacing: 0.05em;
   color: #000;
   text-align: center;
-  margin-left: 20px;
+  display: block;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .container-instructions{
-  margin-bottom: 50px;
-  margin-left: 250px;
-  width: 679px;
-  min-height: 10px;
-  left: 380px;
-  top: 411px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  min-height: 100px;
   border: 2px solid rgba(69, 69, 255, 0.2);
   padding: 20px 32px;
 }
@@ -3123,9 +3201,7 @@ p#republic-of-ph{
 hr {
   margin-bottom: 40px;
 }
-.nice-select {
-  min-width: 250px;
-}
+
 .row {
   margin-bottom:20px;
 }
@@ -3182,10 +3258,7 @@ label#form-labels{
 button#btn-caps{
   text-transform: uppercase;
 }
-.container-email-phone{
-  padding: 20px;
-  margin-left: 33%;
-}
+
 input[type=checkbox]#form-check{
   margin-left: 10px;
   padding: 20px;
@@ -3265,6 +3338,14 @@ input[type=checkbox]#form-check{
 box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.3);
 border-radius: 5px;
 }
+
+.form-select-2{
+  background: #F4F4F4;
+/* Input Shadow */
+
+box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.3);
+border-radius: 5px;
+}
 .emp-group {
   margin: 20px 0px 20px 0px;
   width: 240px;
@@ -3284,10 +3365,13 @@ border-radius: 5px;
   margin-top: 20px;
   display: flex;
   flex-flow: row wrap;
+  margin-left: auto;
+  margin-right: auto;
+  width: 95%;
+  min-height: 100px;
   justify-content: space-evenly;
   align-content: space-evenly;
-  max-width: 550px;
-  padding-left: 45px;
+  padding-left: 50px;
 }
 .downloads {
   display: flex;
@@ -3385,69 +3469,106 @@ p#lrf-txt{
 }
 
 .progbar{
-  margin-left: -30px;
-  margin-top: 150px;
-  width:100%;
+  margin-left: 0px;
+  margin-top: 100px;
 }
 
-.progbar li.pb {
-  text-align: center;
-  font-size: 110%;
-  list-style-type: none;
-  float: left;
-  width: 33.3%;
-  position: relative;
-  color: #4545FF;
+.progbar .step {
+  border-top: 1px solid #dfdfdf;
+  border-bottom: 1px solid #dfdfdf;
+	font-size: 18px;
+	line-height: 40px;
+	text-align: center;
+	color: #4545FF;
+	cursor: default;
+	width: 33.3%;
+	height: 62px;
+	margin: 0 0px;
+	padding: 10px 10px 10px 20px;
+	min-width: 180px;
+	float: left;
+	position: relative;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none; 
+	background-color: #F7F7F7;	
 }
-  .progbar li.pb.done {
-    color: white;
-  }
 
-.progbar li.pb::before {
-  border-top: 1px solid #e9e9e9;
-  border-bottom: 1px solid #e9e9e9;
-  border-left: 1px solid #e9e9e9;
-  position: absolute;
-  content: '';
-  width: 105%;
-  height: 63px;
-  display: flex;
-  text-align: center;
-  top: -85%;
-  background-color:#F7F7F7;
-  z-index: -1;
+@media screen and (max-width: 1000px) {
+  .progbar .step {
+    width: 99.5%;
+    border-top: none;
+    border-bottom: none;
+    border-right: 1px solid #dfdfdf;
+    border-left: 1px solid #dfdfdf;
+  }
 }
-  .progbar li.pb:last-child::before{
-    border-right: 1px solid #e9e9e9;
-  }
 
-  .progbar li.pb.active::before {
-    background-color:white;   
-  }
-
-  .progbar li.pb.done::before {
-    background-color:#43B581;   
-  }
-
-.progbar li.pb::after {
-  position: absolute;
-  content: '';
-  border-top: 30.2px solid transparent;
-  border-bottom: 30.2px solid transparent;
-  border-left: 30.2px solid #F7F7F7;
-  top: -19px;
-  right: -30px;
-  bottom: 0px;
-  z-index: 2;
+.progbar .step:last-child {
+  border-right: 1px solid #dfdfdf;
 }
-  .progbar li:last-child::after {
+
+@media screen and (max-width: 1000px) {
+  .progbar .step:last-child{
+    margin-bottom: 100px;
+    border-bottom: 1px solid #dfdfdf;
+    border-left: 1px solid #dfdfdf;
+  }
+}
+
+.progbar .step:first-child {
+  padding-left: 0px;
+  border-left: 1px solid #dfdfdf;
+}
+
+@media screen and (max-width: 1000px) {
+  .progbar .step:first-child{
+    border-top: 1px solid #dfdfdf;
+    border-right: 1px solid #dfdfdf;
+  }
+}
+
+.progbar .step.current{
+	background-color: white;
+}
+
+.progbar .step.done{
+  color: white;
+	background-color:#43B581;
+}
+
+.progbar .step:after{
+	content: " ";
+	position: absolute;
+	top: 0;
+	right: -30px;
+	width: 0;
+	height: 0;
+	border-top: 30px solid transparent;
+	border-bottom: 30px solid transparent;
+	border-left: 30px solid #F7F7F7;
+	z-index: 2;
+}
+
+@media screen and (max-width: 1000px) {
+  .progbar .step:after{
     display: none;
   }
+}
 
-  .progbar li.pb.active::after {
-    border-left: 30px solid white;
-  }
+.progbar .step:last-child:after {
+	display:none;
+}
 
-  .progbar li.pb.done::after {
-    border-left: 30px solid #43B581;
-  }
+.progbar .step span {
+	position: relative;
+}
+
+.progbar .step.current:after{
+	border-left: 30px solid white;
+}
+
+.progbar .step.done:after{
+	border-left: 30px solid #43B581;
+}
