@@ -92,7 +92,7 @@
         			<p id="email-updates">Check your email for updates</p>
 				</div>
         		<div class="container-button">
-                    <button onclick="Home()" id="btn-home" class="btn btn-primary">Back to home</button>
+                    <button id="btn-home" class="btn btn-primary">Back to home</button>
                     <button id="btn-status" class="btn btn-light">Check Status</button>
                 </div>
         	</div>
@@ -111,7 +111,16 @@
         
         
         <!-- Optional JavaScript -->
-        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+		<script type="text/javascript">
+			function goHome(){
+				document.getElementById("btn-home").onclick = function () {
+					location.href = "https://proj-gov.appspot.com/";
+				};
+			}
+		</script>
+
+
         <script src="js/jquery-3.2.1.min.js"></script>
         <script src="js/popper.js"></script>
         <script src="js/bootstrap.min.js"></script>

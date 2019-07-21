@@ -11,6 +11,7 @@ class Page(webapp2.RequestHandler):
                 'contact':'/contact',
                 'bp':'/business-permit',
                 'ud':'/upload-docs',
+                'as':'/application-sent'
             },
     }
 
@@ -67,6 +68,10 @@ class Contact(Page):
     def get(self):
         self.get_page('contact.html',self.values)
 
+class ApplicationSent(Page):
+    def get(self):
+        self.get_page('application-sent.html',self.values)
+
 class BusinessPermit(Page):
     def get(self):
         self.get_page('business-permit.html',self.values) 
@@ -108,18 +113,40 @@ class BusinessPermit(Page):
         form.lessor_address = self.request.get('form_lessorad')
         form.email_address = self.request.get('form_email')
         form.phone_number = self.request.get('form_phone')
-        form.put()
-        
-        # form_key = form.put()
-        # form_id = form_key.id()
+        form_key = form.put()
+        form = form_key.get()
+        url_string = form_key.urlsafe()
+        # self.redirect('/admin-Dashboard') 
 
-        # self.redirect('/upload-docs') 
+class AdminDashboard(Page):
+    def get(self):
+        form = BPForms.query().fetch()
+        self.values["ID"] = form
+        self.get_page('admin.html',self.values)
+    
+    def post(self):
+        form_id = self.request.get('edit_id')
+        self.redirect('/admin-Dashboard=%s' %form_id) 
+
+class UserStatus(Page):
+    def get(self,key):
+        form_key = ndb.Key(urlsafe=key)
+        form = form_key.get()
+        self.values["ID"] = form
+        self.get_page('test.html',self.values)
+    
+    def post(self):
+        pass
+
 
 app = webapp2.WSGIApplication([
     ('/', LandingPage),
     ('/about-us', AboutUs),
     ('/business-permit', BusinessPermit),
     ('/contact', Contact),
+    ('/application-sent',ApplicationSent),
+    ('/admin-Dashboard',AdminDashboard),
+    ('/admin-Dashboard=(.*)',UserStatus),
 ], debug=True)
 
 def main():
