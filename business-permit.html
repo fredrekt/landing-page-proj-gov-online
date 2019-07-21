@@ -20,7 +20,7 @@
 <!--================End Home Banner Area =================-->
 
 <!--================Contact Area =================-->
-<form action = "/business-permit" method="POST">
+<form action = "/business-permit" method="POST" enctype="multipart/form-data">
     <div id="Page1">
         <div class="container">
             <div class="progbar">
@@ -272,7 +272,8 @@
                 <div class="col-sm-6">
                     <label id="form-labels" for="" style="font-size: 13px;">Area of signboard / Billboard</label>
                     <div style="display:flex;">
-                        <input class="form-control" type="text" name="form_areabb" placeholder="In square meters" style="width:50%;">
+                        <input class="form-control" type="text" name="form_areabb" placeholder="In square meters" style="width:43%">
+                        <label>&emsp;&emsp;</label>
                         <div class="form-select-2" style="width:50%;">
                             <select name="form_lights">
                                 <option value="With Light" >With Light</option>
@@ -281,15 +282,6 @@
                         </div>
                     </div>
                 </div>
-                <!-- <div class="col-sm-3">
-                    <label id="form-labels" for="" style="font-size: 13px;">&nbsp</label>
-                    <div class="form-select-2">
-                        <select name="form_lights">
-                            <option value="With Light" >With Light</option>
-                            <option value="Without Light">Without Light</option>
-                        </select>
-                    </div>
-                </div>                         -->
             </div>
             <!-- 10th row form-->
             <div class="row">
@@ -331,6 +323,19 @@
                 </div>     
                     
                 <hr>
+                <div class="row">
+                    <ul>
+                        <li>Certificate of Prop Holdings <input type="file"></li>
+                        <li>Occupational Permit <input type="file"></li>
+                        <li>Old Business Permit <input type="file"></li>
+                        <li>Contract of Lease <input type="file"></li>
+                        <li>CCENRO Certificate <input type="file"></li>
+                        <li>Barangay Clearance <input type="file"></li>
+                        <li>Sanitary Permit <input type="file"></li>
+                        <li>Barangay Clearance OR <input type="file"></li>
+                        <li>Fire and Safety Inspection Cert. <input type="file"></li>
+                    </ul>
+                </div>
                 <div class="row">
                     <div style="display: block; margin-left: auto;margin-right: auto; width:300px;">
                         <label id="form-labels" for="">Email</label>
