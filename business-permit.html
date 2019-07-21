@@ -13,7 +13,6 @@
                     <a href="/">Home</a>
                     <a href="/contact">Business Permit</a>
                 </div>
-                
             </div>
         </div>
     </div>
@@ -110,13 +109,13 @@
                     <label value="Proprietary" for="proprietary"></label>
                 </div>
                 <div class="col-sm-4">
-                    <label id="form-labels" for="">CTC Number</label>
+                    <label id="form-labels" for="">CTC Number &emsp;&emsp;&emsp;</label>
                     <div class="form-group">
                         <input class="form-control" type="text" name="form_ctc">
                     </div>
                 </div>
                 <div class="col-sm-4">
-                    <label id="form-labels" for="">Tin Number</label>
+                    <label id="form-labels" for="">Tin Number &emsp;&emsp;&emsp;</label>
                     <div class="form-group">
                         <input class="form-control" type="text" name="form_tin">
                     </div>
@@ -188,20 +187,20 @@
             <!-- 8th row form -->
             <div class="row">
                 <div class="col-sm-3">
-                    <label id="form-labels" for="">Contact number</label>
+                    <label id="form-labels" for="">Contact number &emsp;</label>
                     <div class="form-group">
                         <input class="form-control" type="text" name="form_contact">
                     </div>
                 </div>
                 <div class="col-sm-3">
-                    <label id="form-labels" for="">Business Area</label>
+                    <label id="form-labels" for="">Business Area &emsp;&emsp;</label>
                     <div class="form-group">
                         <input class="form-control" type="text" name="form_ba" placeholder="In square meters">
                     </div>
                 </div>
                 <div class="col-sm-3">
                     <label id="form-labels" for="">Place of Business</label>
-                    <div class="form-select-2">
+                    <div class="form-select-2" style="width:100%;">
                         <select name="form_pob">
                             <option value="Rented">Rented</option>
                             <option value="Owned"> Owned</option>
@@ -209,7 +208,7 @@
                     </div>
                 </div>
                 <div class="col-sm-3">
-                    <label id="form-labels" for="">Monthly Rental</label>
+                    <label id="form-labels" for="">Monthly Rental &nbsp; </label>
                     <input class="form-control" name="form_mr" type="text">
                 </div>
                         
@@ -264,19 +263,25 @@
             <!-- 9th row form -->
             <div class="row">
                 <div class="col-sm-6">
-                        <label id="form-labels" for="">Lessor's Name</label>
+                        <label id="form-labels" for="">Lessor's Name &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</label>
                     <div class="form-group">
                         <input class="form-control" type="text" name="form_lessorname" placeholder="Last Name        First Name              Middle Name">
                     </div>
                 </div>
                 
-                <div class="col-sm-3">
+                <div class="col-sm-6">
                     <label id="form-labels" for="" style="font-size: 13px;">Area of signboard / Billboard</label>
-                    <div class="form-group">
-                        <input class="form-control" type="text" name="form_areabb" placeholder="In square meters">
+                    <div style="display:flex;">
+                        <input class="form-control" type="text" name="form_areabb" placeholder="In square meters" style="width:50%;">
+                        <div class="form-select-2" style="width:50%;">
+                            <select name="form_lights">
+                                <option value="With Light" >With Light</option>
+                                <option value="Without Light">Without Light</option>
+                            </select>
+                        </div>
                     </div>
                 </div>
-                <div class="col-sm-3">
+                <!-- <div class="col-sm-3">
                     <label id="form-labels" for="" style="font-size: 13px;">&nbsp</label>
                     <div class="form-select-2">
                         <select name="form_lights">
@@ -284,7 +289,7 @@
                             <option value="Without Light">Without Light</option>
                         </select>
                     </div>
-                </div>                        
+                </div>                         -->
             </div>
             <!-- 10th row form-->
             <div class="row">
