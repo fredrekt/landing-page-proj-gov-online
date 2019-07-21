@@ -2410,22 +2410,23 @@ h6 {
   border: none;
   border-radius: 0px;
   height: 40px;
-  background: #f9f9ff !important;
+  background: #f9f9ff;
   padding-left: 40px;
-  padding-right: 10px;
+  padding-right: 0px;
   width: 100%; }
 
   @media screen and (max-width: 1000px) {
-  .form-select .nice-select {
-    width: 100%; 
+    /* .form-select .nice-select {
+      width: 10px; 
+    } */
   }
-}
 
 .form-select .nice-select .list {
   margin-top: 0;
   border: none;
   border-radius: 0px;
   box-shadow: none;
+  background: #f9f9ff;
   width: 100%;
   padding: 10px 0 10px 0px; }
 
@@ -2439,7 +2440,6 @@ h6 {
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
   line-height: 28px;
-  min-height: 28px;
   font-size: 12px;
   padding-left: 45px; }
 
@@ -2458,6 +2458,74 @@ h6 {
 .form-select .nice-select::after {
   right: 20px; }
 
+/* SPECIAL TYPE OF ORG */
+.form-select-2 {
+  height: 40px;
+  width: 100%; }
+
+.form-select-2 .nice-select {
+  border: none;
+  border-radius: 0px;
+  height: 40px;
+  background: #f9f9ff;
+  padding-left: 40px;
+  padding-right: 0px;
+  width: 100%; }
+
+  @media screen and (min-width: 576px ) and (max-width: 768px ) {
+    .form-select-2 .nice-select {
+      padding-left: 10px; 
+    }
+  }
+
+.form-select-2 .nice-select .list {
+  margin-top: 0;
+  border: none;
+  border-radius: 0px;
+  box-shadow: none;
+  background: #f9f9ff;
+  width: 100%;
+  padding: 10px 0 10px 0px; }
+
+.mt-10 {
+  margin-top: 10px; }
+
+.form-select-2 .nice-select .list .option {
+  font-weight: 300;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  line-height: 28px;
+  font-size: 12px;
+  padding-left: 45px; }
+
+  @media screen and (min-width: 576px ) and (max-width: 768px ) {
+    .form-select-2 .nice-select .list .option {
+      padding-left: 20px; 
+    }
+  }
+
+.form-select-2 .nice-select .list .option.selected {
+  color: #f8b600;
+  background: transparent; }
+
+.form-select-2 .nice-select .list .option:hover {
+  color: #f8b600;
+  background: transparent; }
+
+ .form-select-2 .current {
+  margin-right: 50px;
+  font-weight: 300; }
+
+.form-select-2 .nice-select::after {
+  right: 20px; }
+
+  @media screen and (min-width: 576px ) and (max-width: 768px ) {
+    .form-select-2 .nice-select::after {
+      right: 15px; 
+    }
+  }
 
 /*---------------------------------------------------- */
 /*----------------------------------------------------*/
@@ -3133,9 +3201,7 @@ p#republic-of-ph{
 hr {
   margin-bottom: 40px;
 }
-.nice-select {
-  min-width: 250px;
-}
+
 .row {
   margin-bottom:20px;
 }
@@ -3272,6 +3338,14 @@ input[type=checkbox]#form-check{
 box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.3);
 border-radius: 5px;
 }
+
+.form-select-2{
+  background: #F4F4F4;
+/* Input Shadow */
+
+box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.3);
+border-radius: 5px;
+}
 .emp-group {
   margin: 20px 0px 20px 0px;
   width: 240px;
@@ -3293,12 +3367,11 @@ border-radius: 5px;
   flex-flow: row wrap;
   margin-left: auto;
   margin-right: auto;
-  width: 80%;
+  width: 95%;
   min-height: 100px;
   justify-content: space-evenly;
   align-content: space-evenly;
-  max-width: 550px;
-  padding-left: 45px;
+  padding-left: 50px;
 }
 .downloads {
   display: flex;
