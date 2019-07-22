@@ -2,6 +2,8 @@ from google.appengine.ext import ndb, blobstore
 from google.appengine.ext.webapp import template
 import os
 import webapp2
+from datetime import datetime
+import pytz
 
 class Page(webapp2.RequestHandler):
     values = {
@@ -55,6 +57,10 @@ class BPForms(ndb.Model):
     lessor_address = ndb.StringProperty()
     email_address = ndb.StringProperty()
     phone_number = ndb.StringProperty()
+    status = ndb.StringProperty()
+    date_created = ndb.DateTimeProperty()
+    # date_created = ndb.DateTimeProperty(auto_now_add=True)
+    # date_created = ndb.StringProperty()
 
 class LandingPage(Page):
     def get(self):
@@ -113,6 +119,7 @@ class BusinessPermit(Page):
         form.lessor_address = self.request.get('form_lessorad')
         form.email_address = self.request.get('form_email')
         form.phone_number = self.request.get('form_phone')
+        form.date_created = datetime.now().replace(tzinfo=pytz.utc).astimezone(pytz.timezone('Etc/GMT-8')).replace(tzinfo=None)
         form_key = form.put()
         form = form_key.get()
         url_string = form_key.urlsafe()
@@ -129,8 +136,16 @@ class AdminPending(Page):
         self.get_page('pending.html',self.values)
     
     def post(self):
+        what = self.request.get('this')
         form_id = self.request.get('edit_id')
-        self.redirect('/admin-pending=%s' %form_id) 
+
+        if what == "1":
+            self.redirect('/admin-pending=%s' %form_id) 
+        elif what == "2":
+            form_key = ndb.Key(urlsafe=form_id)
+            deleteThis = form_key.get()
+            deleteThis.key.delete()
+            self.redirect('/admin-pending')
 
 class UserStatus(Page):
     def get(self,key):
@@ -138,10 +153,13 @@ class UserStatus(Page):
         form = form_key.get()
         self.values["form"] = form
         self.get_page('status.html',self.values)
-    
-    def post(self):
-        pass
 
+class UserDelete(Page):
+    def get(self,key):
+        form_key = ndb.Key(urlsafe=key)
+        deleteThis = form_key.get()
+        deleteThis.key.delete()
+        self.redirect('/admin-pending') 
 
 app = webapp2.WSGIApplication([
     ('/', LandingPage),
@@ -152,8 +170,8 @@ app = webapp2.WSGIApplication([
     ('/admin',AdminProfile),
     ('/admin-pending',AdminPending),
     ('/admin-pending=(.*)',UserStatus),
-    # ('/admin-Dashboard',AdminDashboard),
-    # ('/admin-Dashboard=(.*)',UserStatus),
+    ('/admin-delete=(.*)',UserDelete),
+
 ], debug=True)
 
 def main():
