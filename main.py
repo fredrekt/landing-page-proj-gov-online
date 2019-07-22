@@ -120,13 +120,13 @@ class BusinessPermit(Page):
 
 class AdminProfile(Page):
     def get(self):
-        self.get_page('admin\dashboard.html',self.values)
+        self.get_page('dashboard.html',self.values)
     
 class AdminPending(Page):
     def get(self):
         form = BPForms.query().fetch()
         self.values["ID"] = form
-        self.get_page('admin\pending.html',self.values)
+        self.get_page('pending.html',self.values)
     
     def post(self):
         form_id = self.request.get('edit_id')
@@ -137,7 +137,7 @@ class UserStatus(Page):
         form_key = ndb.Key(urlsafe=key)
         form = form_key.get()
         self.values["form"] = form
-        self.get_page('admin\\test.html',self.values)
+        self.get_page('status.html',self.values)
     
     def post(self):
         pass
