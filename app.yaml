@@ -26,3 +26,7 @@ handlers:
 
 - url: /.*
   script: main.app
+
+libraries:
+- name: pytz
+  version: "2017.3"

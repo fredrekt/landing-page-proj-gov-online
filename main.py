@@ -2,8 +2,9 @@ from google.appengine.ext import ndb, blobstore
 from google.appengine.ext.webapp import template
 import os
 import webapp2
-from datetime import datetime
 import pytz
+from datetime import datetime
+
 
 class Page(webapp2.RequestHandler):
     values = {
