@@ -3,6 +3,9 @@ api_version: 1
 threadsafe: true
 
 handlers:
+- url: /admin/assets
+  static_dir: admin/assets
+
 - url: /css
   static_dir: css
 

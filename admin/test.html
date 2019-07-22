@@ -1,0 +1,63 @@
+{% extends "base.html" %}
+{% block content %}
+<style>
+    th{
+        width: 20%;
+    }
+
+</style>
+<div class="row">
+<div class="container-fluid">
+    <div class="card-body table-full-width table-responsive">
+    <table class="table table-hover">
+        <tr><th>Email:</th><td>{{ form.email_address }}</td></th></tr>
+        <tr><th>Application Type:</th><td>{{ form.application_type }}</td></th></tr>
+        <tr><th>Amendments:</th><td> {{ form.amendments }}</td></th></tr>
+        <tr><th>Transfer:</th><td> {{ form.transfer }}</td></th></tr>
+        <tr><th>Mode of Payment:</th><td> {{ form.mode_of_payment }}</td></th></tr>
+        <tr><th>Type of Organization:</th><td> {{ form.type_of_organiztion }}</td></th></tr>
+        <tr><th>Non-Stock/Non-Profit:</th><td> {{ form.type_of_organiztion2 }}</td></th></tr>
+        <tr><th>Proprietary:</th><td> {{ form.type_of_organiztion3 }}</td></th></tr>
+        <tr><th>CTC Number:</th><td> {{ form.ctc_number }}</td></th></tr>
+        <tr><th>TIN Number:</th><td> {{ form.tin_number }}</td></th></tr>
+        <tr><th>DTI/SEC/CDA Registration Number:</th><td> {{ form.dti_sec_cda_reg_num }}</td></th></tr>
+        <tr><th>D.O.R:</th><td> {{ form.dor }}</td></th></tr>
+        <tr><th>Name Of Tax Payer:</th><td> {{ form.name_of_tax_payer }}</td></th></tr>
+        <tr><th>Business Name:</th><td> {{ form.business_name }}</td></th></tr>
+        <tr><th>Name of President/Treasurer of Corporation:</th><td> {{ form.name_of_pres }}</td></th></tr>
+        <tr><th>Tradename/Franchise Name:</th><td> {{ form.tradename }}</td></th></tr>
+        <tr><th>Complete Business Address:</th><td> {{ form.complete_business_address }}</td></th></tr>
+        <tr><th>Complete Owner's Address:</th><td> {{ form.complete_owner_address }}</td></th></tr>
+        <tr><th>Contact Number:</th><td> {{ form.contact_number }}</td></th></tr>
+        <tr><th>Business Area:</th><td> {{ form.business_area }}</td></th></tr>
+        <tr><th>Place of Business:</th><td> {{ form.place_of_business }}</td></th></tr>
+        <tr><th>Monthly Rental:</th><td> {{ form.monthly_rental }}</td></th></tr>
+        <tr><th>Number of Managers:</th><td> {{ form.num_of_manager }}</td></th></tr>
+        <tr><th>Number of Superviros:</th><td> {{ form.num_of_supervisor }}</td></th></tr>
+        <tr><th>Number of Cashiers:</th><td> {{ form.num_of_cashier }}</td></th></tr>
+        <tr><th>Number of Rand & File:</th><td> {{ form.num_of_rankandfile }}</td></th></tr>
+        <tr><th>Number of Elevators:</th><td> {{ form.num_of_elevators }}</td></th></tr>
+        <tr><th>Number of Escalators:</th><td> {{ form.num_of_escalators }}</td></th></tr>
+        <tr><th>Number of Air Conditioner:</th><td> {{ form.num_of_airconditioner }}</td></th></tr>
+        <tr><th>Number of CCTV:</th><td> {{ form.num_of_cctvs }}</td></th></tr>
+        <tr><th>Lessor's Name:</th><td> {{ form.lessor_name }}</td></th></tr>
+        <tr><th>Area of Signboard / Billboard:</th><td> {{ form.billboard_area }}</td></th></tr>
+        <tr><th>With lights :</th><td> {{ form.billboard_light }}</td></th></tr>
+        <tr><th>Lessor's Address:</th><td> {{ form.lessor_address }}</td></th></tr>
+        <tr><th>Email Address:</th><td> {{ form.email_address }}</td></th></tr>
+        <tr><th>Phone Number:</th><td> {{ form.phone_number }}</td></th></tr>
+    </table>
+    </div>
+</div>
+</div>
+<div class="container-fluid">
+    <select name="decision">
+        <option>Approve</option>
+        <option>Reject</option>
+    </select>
+    <input type="button" value="SUBMIT"></input>
+</div>
+<div style="margin-bottom: 500px;">
+
+</div>
+{% endblock content %}

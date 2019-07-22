@@ -1,0 +1,31 @@
+{
+  "name": "admin-proj-govt",
+  "version": "0.0.1",
+  "description": "Philippine Government Online Services Admin",
+  "main": "index.js",
+  "directories": {
+    "example": "examples"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass --watch assets/sass -o assets/css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/creativetimofficial/light-bootstrap-dashboard.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/creativetimofficial/light-bootstrap-dashboard/issues"
+  },
+  "homepage": "https://github.com/creativetimofficial/light-bootstrap-dashboard#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  },
+  "dependencies": {
+    "browser-sync": "^2.26.7",
+    "gulp-sass": "^4.0.2",
+    "node-sass": "^4.12.0"
+  }
+}

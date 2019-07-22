@@ -118,22 +118,26 @@ class BusinessPermit(Page):
         url_string = form_key.urlsafe()
         # self.redirect('/admin-Dashboard') 
 
-class AdminDashboard(Page):
+class AdminProfile(Page):
+    def get(self):
+        self.get_page('admin\dashboard.html',self.values)
+    
+class AdminPending(Page):
     def get(self):
         form = BPForms.query().fetch()
         self.values["ID"] = form
-        self.get_page('admin.html',self.values)
+        self.get_page('admin\pending.html',self.values)
     
     def post(self):
         form_id = self.request.get('edit_id')
-        self.redirect('/admin-Dashboard=%s' %form_id) 
+        self.redirect('/admin-pending=%s' %form_id) 
 
 class UserStatus(Page):
     def get(self,key):
         form_key = ndb.Key(urlsafe=key)
         form = form_key.get()
-        self.values["ID"] = form
-        self.get_page('test.html',self.values)
+        self.values["form"] = form
+        self.get_page('admin\\test.html',self.values)
     
     def post(self):
         pass
@@ -145,8 +149,11 @@ app = webapp2.WSGIApplication([
     ('/business-permit', BusinessPermit),
     ('/contact', Contact),
     ('/application-sent',ApplicationSent),
-    ('/admin-Dashboard',AdminDashboard),
-    ('/admin-Dashboard=(.*)',UserStatus),
+    ('/admin',AdminProfile),
+    ('/admin-pending',AdminPending),
+    ('/admin-pending=(.*)',UserStatus),
+    # ('/admin-Dashboard',AdminDashboard),
+    # ('/admin-Dashboard=(.*)',UserStatus),
 ], debug=True)
 
 def main():
