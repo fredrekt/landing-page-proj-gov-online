@@ -81,6 +81,7 @@ class BusinessPermit(Page):
         form.phone_number = self.request.get('form_phone')
         form.status = "Pending"
         form.date_created = datetime.now().replace(tzinfo=pytz.utc).astimezone(pytz.timezone('Etc/GMT-8')).replace(tzinfo=None)
+        form.put()
         self.redirect('/application-sent') 
 
 app = webapp2.WSGIApplication([
