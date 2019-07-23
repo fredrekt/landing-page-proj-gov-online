@@ -6,23 +6,26 @@ handlers:
 - url: /admin/assets
   static_dir: admin/assets
 
-- url: /css
-  static_dir: css
+- url: /assets
+  static_dir: assets
 
-- url: /fonts
-  static_dir: fonts
+# - url: /fonts
+#   static_dir: fonts
 
-- url: /img
-  static_dir: img
+# - url: /img
+#   static_dir: img
 
-- url: /js
-  static_dir: js
+# - url: /js
+#   static_dir: js
 
-- url: /scss
-  static_dir: scss
+# - url: /scss
+#   static_dir: scss
 
-- url: /vendors
-  static_dir: vendors
+# - url: /vendors
+#   static_dir: vendors
+
+- url: /admin.*
+  script: admin.admin.app
 
 - url: /.*
   script: main.app
