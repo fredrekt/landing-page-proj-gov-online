@@ -1,6 +1,8 @@
 from BPForm import BPForms, ndb
 from google.appengine.ext import blobstore
 from google.appengine.ext.webapp import template
+from google.appengine.api import app_identity
+from google.appengine.api import mail
 import os
 import webapp2
 import pytz
@@ -13,13 +15,21 @@ class Page(webapp2.RequestHandler):
         path = os.path.join(os.path.dirname(__file__), htmlfile)
         self.response.out.write(template.render(path, self.values))
 
+def send_mail(recepient_name, recepient_email, status):
+    mail.send_mail(sender="brylempat@gmail.com",
+                   to=" %s <%s>" %(recepient_name, recepient_email),
+                   subject="Business Permit Status",
+                   body="""Dear %s:
+                    %s
+                    """%(recepient_name,status))    
+
 class AdminProfile(Page):
     def get(self):
         self.get_page('dashboard.html',self.values)
     
 class AdminPending(Page):
     def get(self):
-        form = BPForms.query(BPForms.status == 'Pending').fetch()
+        form = BPForms.query(BPForms.status == 'Pending').order(-BPForms.date_created).fetch()
         self.values["ID"] = form
         self.values["url"] = "adp"
         self.get_page('pending.html',self.values)
@@ -39,7 +49,7 @@ class AdminPending(Page):
 
 class AdminDenied(Page):
     def get(self):
-        form = BPForms.query(BPForms.status == 'Denied').fetch()
+        form = BPForms.query(BPForms.status == 'Denied').order(-BPForms.date_created).fetch()
         self.values["ID"] = form
         self.values["url"] = "add"
         self.get_page('denied.html',self.values)
@@ -54,7 +64,7 @@ class AdminDenied(Page):
 
 class AdminApproved(Page):
     def get(self):
-        form = BPForms.query(BPForms.status == 'Approved').fetch()
+        form = BPForms.query(BPForms.status == 'Approved').order(-BPForms.date_created).fetch()
         self.values["ID"] = form
         self.values["url"] = "ada"
         self.get_page('approved.html',self.values)
@@ -74,6 +84,7 @@ class UserStatus(Page):
         form_key = ndb.Key(urlsafe=key)
         form = form_key.get()
         form.status = self.request.get('decision')
+        send_mail("brylempat@gmail.com",form.email_address,form.status)
         form.put()
         time.sleep(0.1)
         self.redirect('/admin-pending')

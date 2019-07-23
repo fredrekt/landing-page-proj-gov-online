@@ -83,7 +83,7 @@ class BusinessPermit(Page):
         form.date_created = datetime.now().replace(tzinfo=pytz.utc).astimezone(pytz.timezone('Etc/GMT-8')).replace(tzinfo=None)
         form_key = form.put()
         form = form_key.get()
-        url_string = form_key.urlsafe()
+        # send_approved_mail("brylempat@gmail.com",form.name_of_tax_payer,form.email_address,form_key.id())
         # self.redirect('/admin-Dashboard') 
 
 app = webapp2.WSGIApplication([
