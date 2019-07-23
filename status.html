@@ -10,6 +10,7 @@
 <div class="container-fluid">
     <div class="card-body table-full-width table-responsive">
     <table class="table table-hover">
+        <tr><th>STATUS:</th><td>{{ form.status }}</td></th></tr>
         <tr><th>Email:</th><td>{{ form.email_address }}</td></th></tr>
         <tr><th>Application Type:</th><td>{{ form.application_type }}</td></th></tr>
         <tr><th>Amendments:</th><td> {{ form.amendments }}</td></th></tr>
@@ -51,11 +52,13 @@
 </div>
 </div>
 <div class="container-fluid">
-    <select name="decision">
-        <option>Approve</option>
-        <option>Reject</option>
-    </select>
-    <input type="button" value="SUBMIT"></input>
+    <form method="POST">
+        <select name="decision">
+            <option value="Approved">Approve</option>
+            <option value="Denied">Deny</option>
+        </select>
+        <input type="submit" value="SUBMIT"></input>
+    </form>
 </div>
 <div style="margin-bottom: 500px;">
 

@@ -1,0 +1,84 @@
+{% extends "baseadmin.html" %}
+{% block content %}
+<div class="content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card card-plain table-plain-bg">
+                    <div class="card-header ">
+                        <h4 class="card-title">Business Permit Applications</h4>
+                        <p class="card-category">All Business Permits in this list are pending process and have been paid for. If there is an error, please report and send it to the right category.</p>
+                    </div>
+                    <div class="card-body table-full-width table-responsive">
+                    {% if ID %}
+                        <table class="table table-hover" id="permits">
+                            <thead>
+                                <th>Permit #</th>
+                                <th>Applicant</th>
+                                <th>Business Name</th>
+                                <th>City</th>
+                                <th>Date</th>
+                                <th></th>
+                            </thead>
+                            <tbody>
+                                {% for i in ID %}
+                                <tr>
+                                    <td>{{ i.key.id }}</td>
+                                    <td>{{i.name_of_tax_payer}}</td>
+                                    <td>{{i.business_name}}</td>
+                                    <td>Cebu</td>
+                                    <td>{{i.date_created}}</td>
+                                    <td><form method="POST"><input type="submit" value="View Details"></input><input type="hidden" name="edit_id" value="{{ i.key.urlsafe }}"></input></form></td>
+                                </tr>
+                                {% endfor %}
+                
+                            </tbody>
+                        </table>
+                    {% else %}
+                        <p>NO DATA</p>
+                    {% endif %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<footer class="footer">
+    <div class="container-fluid">
+        <nav>
+            <ul class="footer-menu">
+                <li>
+                    <a href="#">
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Company
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Portfolio
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Blog
+                    </a>
+                </li>
+            </ul>
+            <p class="copyright text-center">
+                ©
+                <script>
+                    document.write(new Date().getFullYear())
+                </script>
+                <a href="http://www.creative-tim.com">Creative Tim</a>, made with love for a better web
+            </p>
+        </nav>
+    </div>
+</footer>
+</body>
+{% endblock content %}
+ 
+ 

@@ -4,6 +4,7 @@ import os
 import webapp2
 import pytz
 from datetime import datetime
+import time
 
 
 class Page(webapp2.RequestHandler):
@@ -13,8 +14,7 @@ class Page(webapp2.RequestHandler):
                 'about':'/about-us',
                 'contact':'/contact',
                 'bp':'/business-permit',
-                'ud':'/upload-docs',
-                'as':'/application-sent'
+                'as':'/application-sent',
             },
     }
 
@@ -60,8 +60,7 @@ class BPForms(ndb.Model):
     phone_number = ndb.StringProperty()
     status = ndb.StringProperty()
     date_created = ndb.DateTimeProperty()
-    # date_created = ndb.DateTimeProperty(auto_now_add=True)
-    # date_created = ndb.StringProperty()
+    status = ndb.StringProperty()
 
 class LandingPage(Page):
     def get(self):
@@ -120,6 +119,7 @@ class BusinessPermit(Page):
         form.lessor_address = self.request.get('form_lessorad')
         form.email_address = self.request.get('form_email')
         form.phone_number = self.request.get('form_phone')
+        form.status = "Pending"
         form.date_created = datetime.now().replace(tzinfo=pytz.utc).astimezone(pytz.timezone('Etc/GMT-8')).replace(tzinfo=None)
         form_key = form.put()
         form = form_key.get()
@@ -132,8 +132,9 @@ class AdminProfile(Page):
     
 class AdminPending(Page):
     def get(self):
-        form = BPForms.query().fetch()
+        form = BPForms.query(BPForms.status == 'Pending').fetch()
         self.values["ID"] = form
+        self.values["url"] = "adp"
         self.get_page('pending.html',self.values)
     
     def post(self):
@@ -146,7 +147,34 @@ class AdminPending(Page):
             form_key = ndb.Key(urlsafe=form_id)
             deleteThis = form_key.get()
             deleteThis.key.delete()
+            time.sleep(0.1)
             self.redirect('/admin-pending')
+
+class AdminDenied(Page):
+    def get(self):
+        form = BPForms.query(BPForms.status == 'Denied').fetch()
+        self.values["ID"] = form
+        self.values["url"] = "add"
+        self.get_page('denied.html',self.values)
+    
+    def post(self):
+        form_id = self.request.get('edit_id')
+        form_key = ndb.Key(urlsafe=form_id)
+        deleteThis = form_key.get()
+        deleteThis.key.delete()
+        time.sleep(0.1)
+        self.redirect('/admin-denied')
+
+class AdminApproved(Page):
+    def get(self):
+        form = BPForms.query(BPForms.status == 'Approved').fetch()
+        self.values["ID"] = form
+        self.values["url"] = "ada"
+        self.get_page('approved.html',self.values)
+    
+    def post(self):
+        form_id = self.request.get('edit_id')
+        self.redirect('/admin-pending=%s' %form_id) 
 
 class UserStatus(Page):
     def get(self,key):
@@ -154,13 +182,14 @@ class UserStatus(Page):
         form = form_key.get()
         self.values["form"] = form
         self.get_page('status.html',self.values)
-
-class UserDelete(Page):
-    def get(self,key):
+    
+    def post(self,key):
         form_key = ndb.Key(urlsafe=key)
-        deleteThis = form_key.get()
-        deleteThis.key.delete()
-        self.redirect('/admin-pending') 
+        form = form_key.get()
+        form.status = self.request.get('decision')
+        form.put()
+        time.sleep(0.1)
+        self.redirect('/admin-pending')
 
 app = webapp2.WSGIApplication([
     ('/', LandingPage),
@@ -171,7 +200,8 @@ app = webapp2.WSGIApplication([
     ('/admin',AdminProfile),
     ('/admin-pending',AdminPending),
     ('/admin-pending=(.*)',UserStatus),
-    ('/admin-delete=(.*)',UserDelete),
+    ('/admin-approved',AdminApproved),
+    ('/admin-denied',AdminDenied),
 
 ], debug=True)
 
