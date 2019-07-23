@@ -52,26 +52,40 @@ class AdminDenied(Page):
         form = BPForms.query(BPForms.status == 'Denied').order(-BPForms.date_created).fetch()
         self.values["ID"] = form
         self.values["url"] = "add"
-        self.get_page('denied.html',self.values)
+        self.get_page('pending.html',self.values)
     
     def post(self):
+        what = self.request.get('this')
         form_id = self.request.get('edit_id')
-        form_key = ndb.Key(urlsafe=form_id)
-        deleteThis = form_key.get()
-        deleteThis.key.delete()
-        time.sleep(0.1)
-        self.redirect('/admin-denied')
+
+        if what == "1":
+            self.redirect('/admin-pending=%s' %form_id) 
+        elif what == "2":
+            form_key = ndb.Key(urlsafe=form_id)
+            deleteThis = form_key.get()
+            deleteThis.key.delete()
+            time.sleep(0.1)
+            self.redirect('/admin-denied')
 
 class AdminApproved(Page):
     def get(self):
         form = BPForms.query(BPForms.status == 'Approved').order(-BPForms.date_created).fetch()
         self.values["ID"] = form
         self.values["url"] = "ada"
-        self.get_page('approved.html',self.values)
+        self.get_page('pending.html',self.values)
     
     def post(self):
+        what = self.request.get('this')
         form_id = self.request.get('edit_id')
-        self.redirect('/admin-pending=%s' %form_id) 
+
+        if what == "1":
+            self.redirect('/admin-pending=%s' %form_id) 
+        elif what == "2":
+            form_key = ndb.Key(urlsafe=form_id)
+            deleteThis = form_key.get()
+            deleteThis.key.delete()
+            time.sleep(0.1)
+            self.redirect('/admin-approved')
 
 class UserStatus(Page):
     def get(self,key):
@@ -84,7 +98,7 @@ class UserStatus(Page):
         form_key = ndb.Key(urlsafe=key)
         form = form_key.get()
         form.status = self.request.get('decision')
-        send_mail("brylempat@gmail.com",form.email_address,form.status)
+        send_mail("proj.gov.online@gmail.com",form.email_address,form.status)
         form.put()
         time.sleep(0.1)
         self.redirect('/admin-pending')

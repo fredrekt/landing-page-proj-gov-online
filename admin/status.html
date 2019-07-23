@@ -9,6 +9,7 @@
 <div class="row">
 <div class="container-fluid">
     <div class="card-body table-full-width table-responsive">
+    <a href="/admin-pending" class="btn btn-primary">Go Back</a>
     <table class="table table-hover">
         <tr><th>STATUS:</th><td>{{ form.status }}</td></th></tr>
         <tr><th>Email:</th><td>{{ form.email_address }}</td></th></tr>
@@ -53,11 +54,14 @@
 </div>
 <div class="container-fluid">
     <form method="POST">
-        <select name="decision">
+        <div class="form-group">
+        <label for="">Disabled select menu</label>
+        <select class="form-control" style="width: 20%;">
             <option value="Approved">Approve</option>
             <option value="Denied">Deny</option>
         </select>
-        <input type="submit" value="SUBMIT"></input>
+        </div>
+        <input type="submit" class="btn btn-primary" value="SUBMIT"></input>
     </form>
 </div>
 <div style="margin-bottom: 500px;">

@@ -629,6 +629,8 @@ button:focus {
     .blog_details h2:hover {
       color: #3bacf0; }
   .blog_details p {
+    color: #222222;
+    font-size: 18px;
     margin-bottom: 26px; }
 
 .view_btn {

@@ -356,15 +356,14 @@
             <div class="row">
                 <div style="display: block; margin-left: auto;margin-right: auto;">
                     <a onclick="return show('Page1','Page2','Page3');" style="background-color: #616193; color:white;" class="btn btn-lg" type="submit">BACK</a>
-                    <input style="background-color: #616193; color:white;" class="btn btn-lg" type="submit" value="SUBMIT">
-                    <!-- <a onclick="return show('Page3','Page1','Page2');" style="background-color: #616193; color:white;" class="btn btn-lg" type="submit">NEXT</a> -->
+                    <!-- <input style="background-color: #616193; color:white;" class="btn btn-lg" type="submit" value="SUBMIT"> -->
+                    <a onclick="return show('Page3','Page1','Page2');" style="background-color: #616193; color:white;" class="btn btn-lg" type="submit">NEXT</a>
                 </div>
             </div>
         </section>
     </div>
-</form>
 
-    <!-- <div id="Page3" style="display:none">
+    <div id="Page3" style="display:none">
         <div class="container">
             <div class="progbar">
                 <div class="step done"><span>Fill Out Application Form</span></div>
@@ -374,18 +373,61 @@
         </div>
         <section class="contact_area p_120">
             <div class="container">
+                <img id="gov-seal" src="assets/img/gov-seal.png">
+                <p id="republic-of-ph">Republic of the Philippines
+                    <br>Office of the Mayor
+                    <br>Cebu City
+                </p>
                 <div class="row">
-                    TEST VALUE: <input type="text" name="form_test">
-                </div>  
-            </div>
-            <div class="row">
-                <div style="display: block; margin-left: auto;margin-right: auto;">
-                    <a onclick="return show('Page2','Page1','Page3');" style="background-color: #616193; color:white;" class="btn btn-lg" type="submit">BACK</a>
-                    <input style="background-color: #616193; color:white;" class="btn btn-lg" type="submit" value="SUBMIT">
+                    <div style="display: block; margin-left: auto;margin-right: auto;">
+                        <div class = "blog_details">
+                            <h2 style="padding-top: 50px; padding-bottom: 30px;">Business Permit - License and Regulatory Fees</h2>
+                            <table>
+                                <tr>
+                                   <td><p>Fee Name</p></td> 
+                                   <td style="padding-left: 225%;"><p>1000php</p></td>
+                                </tr>
+                                <tr>
+                                   <td><p>Fee Name</p></td>
+                                   <td style="padding-left: 225%;"><p>1000php</p></td>
+                                </tr>
+                                <tr>
+                                   <td><p>Fee Name</p></td> 
+                                   <td style="padding-left: 225%;"><p>1000php</p></td>
+                                </tr>
+                                <tr>
+                                   <td><p>Fee Name</p></td> 
+                                   <td style="padding-left: 225%;"><p>1000php</p></td>
+                                </tr>
+                                <tr>
+                                   <td><p>Fee Name</p></td> 
+                                   <td style="padding-left: 225%;"><p>1000php</p></td>
+                                </tr>
+                            </table>
+                            <hr>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-3"></div>
+                    <div class="col-sm-3">
+                        <h2 style="color: #000">TOTAL</h2>
+                    </div>
+                    <div class="col-sm-3">
+                        <h2 style="color: #000;text-align: right;">5000php</h2>
+                    </div>
+                    <div class="col-sm-3"></div>
+                </div>
+                <div class="row">
+                    <div style="display: block; margin-left: auto;margin-right: auto;">
+                        <a onclick="return show('Page2','Page1','Page3');" style="background-color: #616193; color:white;" class="btn btn-lg" type="submit">BACK</a>
+                        <input style="background-color: #616193; color:white;" class="btn btn-lg" type="submit" value="SUBMIT">
+                    </div>
                 </div>
             </div>
         </section>
-    </div> -->
+    </div>
+</form>
 <script src="assets/js/BPpages.js"></script>
 {% endblock content %}
         

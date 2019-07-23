@@ -81,10 +81,7 @@ class BusinessPermit(Page):
         form.phone_number = self.request.get('form_phone')
         form.status = "Pending"
         form.date_created = datetime.now().replace(tzinfo=pytz.utc).astimezone(pytz.timezone('Etc/GMT-8')).replace(tzinfo=None)
-        form_key = form.put()
-        form = form_key.get()
-        # send_approved_mail("brylempat@gmail.com",form.name_of_tax_payer,form.email_address,form_key.id())
-        # self.redirect('/admin-Dashboard') 
+        self.redirect('/application-sent') 
 
 app = webapp2.WSGIApplication([
     ('/', LandingPage),
